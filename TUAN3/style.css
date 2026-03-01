@@ -1,0 +1,97 @@
+/* Thiết lập chung cho trang */
+body {
+    font-family: sans-serif;
+    /* Màu nền xanh nhạt bao quanh form */
+    background-color: #e0f7fa; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Căn giữa form theo chiều dọc */
+}
+
+/* Khung chứa biểu mẫu */
+.contact-form-container {
+    /* Màu nền xanh cốm nhạt của form */
+    background-color: #e8f0c3; 
+    padding: 40px;
+    border-radius: 15px; /* Bo tròn góc */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Đổ bóng nhẹ */
+    width: 100%;
+    max-width: 600px; /* Độ rộng tối đa của form */
+}
+
+/* Tiêu đề "CONTACT US" */
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Nhóm các trường nhập liệu */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Nhãn (Name, Email,...) */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Các ô nhập liệu và vùng văn bản */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%; /* Chiếm toàn bộ chiều rộng container */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Đảm bảo padding không làm vỡ khung */
+    font-size: 14px;
+    background-color: #fff; /* Nền trắng cho ô nhập */
+    outline: none; /* Loại bỏ viền focus mặc định */
+    transition: border-color 0.3s; /* Hiệu ứng chuyển màu viền mượt mà */
+}
+
+/* Hiệu ứng khi bấm vào ô nhập liệu (Focus) */
+input:focus,
+textarea:focus {
+    /* Viền màu xanh dương giống trong hình khi được chọn */
+    border: 2px solid #64b5f6; 
+}
+
+/* Vùng nhập tin nhắn */
+textarea {
+    resize: vertical; /* Chỉ cho phép kéo giãn theo chiều dọc */
+}
+
+/* Container chứa nút submit */
+.submit-btn-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Nút Submit */
+button[type="submit"] {
+    /* Màu nền xanh dương nhạt của nút */
+    background-color: #aadddd; 
+    color: white;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Hiệu ứng khi di chuột vào nút */
+button[type="submit"]:hover {
+    background-color: #95caca; /* Màu tối hơn một chút khi hover */
+}

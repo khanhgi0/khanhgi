@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tết Quê Hương — Văn Hóa Mùa Xuân</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Be+Vietnam+Pro:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav>
+    <a href="#" class="nav-logo">Tết <span>Quê Hương</span> <br> Mai Khanh</a> 
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Trang Chủ</a></li>
+      <li><a href="cuatoi.html">Phong Tục</a></li>
+      <li><a href="amthuc.html">Ẩm Thực</a></li>
+      <li><a href="vanhoa.html">Văn Hóa</a></li>
+         <li><a href="trochoi.html">Trò Chơi Hái Lộc</a></li>
+      <li><a href="lienhe.html">Liên Hệ</a></li>
+    </ul>
+    <a href="lienhe.html" class="nav-contact">Khám Phá</a>
+  </nav>
+
+<!-- HERO -->
+  <section class="at-hero">
+    <div class="at-hero__bg"></div>
+    <div class="at-hero__overlay"></div>
+    <div class="at-hero__content">
+      <p class="at-hero__label">✦ Miền Nam · Tết Nguyên Đán ✦</p>
+      <h1 class="at-hero__title">
+        Hương Vị<br>
+        <em>Tết Phương Nam</em>
+      </h1>
+      <p class="at-hero__desc">
+        Mâm cỗ ngày Tết miền Nam không chỉ là bữa ăn — đó là cả một nền văn hóa, là tình yêu thương được gói ghém trong từng món ăn truyền thống, đậm đà hương vị quê nhà.
+      </p>
+    </div>
+    <div class="at-hero__deco">食</div>
+  </section>
+
+  
+   <!-- INTRO -->
+  <section class="at-intro reveal">
+    <div class="at-intro__number">12</div>
+    <div class="at-intro__text">
+      <p class="at-intro__label">✦ Mâm Cỗ Tết</p>
+      <h2 class="at-intro__heading">
+        Mười Hai Món<br>
+        <em>Đặc Sắc Phương Nam</em>
+      </h2>
+      <p class="at-intro__body">
+        Từ chiếc bánh chưng xanh thơm lá chuối đến nồi thịt kho hột vịt nước dừa vàng ươm — mỗi món ăn ngày Tết đều mang trong mình một câu chuyện, một ký ức, một phần hồn của đất phương Nam.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- TICKER -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-item">Bánh Chưng</span>
+      <span class="ticker-item">Thịt Kho Hột Vịt</span>
+      <span class="ticker-item">Canh Khổ Qua</span>
+      <span class="ticker-item">Củ Kiệu Tôm Khô</span>
+      <span class="ticker-item">Chả Giò</span>
+      <span class="ticker-item">Gà Luộc Lá Chanh</span>
+      <span class="ticker-item">Nem Chua</span>
+      <span class="ticker-item">Thịt Đông</span>
+      <span class="ticker-item">Chả Lụa</span>
+      <span class="ticker-item">Xôi Gấc</span>
+      <span class="ticker-item">Chả Lụa</span>
+      <span class="ticker-item">Mứt</span>
+      <span class="ticker-item">Bánh Chưng</span>
+      <span class="ticker-item">Thịt Kho Hột Vịt</span>
+      <span class="ticker-item">Canh Khổ Qua</span>
+      <span class="ticker-item">Củ Kiệu Tôm Khô</span>
+      <span class="ticker-item">Chả Giò</span>
+      <span class="ticker-item">Gà Luộc Lá Chanh</span>
+      <span class="ticker-item">Nem Chua</span>
+      <span class="ticker-item">Thịt Đông</span>
+      <span class="ticker-item">Chả Lụa</span>
+      <span class="ticker-item">Xôi Gấc</span>
+      <span class="ticker-item">Chả Lụa</span>
+      <span class="ticker-item">Mứt</span>
+    </div>
+  </div>
+  
+  <!-- DIVIDER -->
+  <div class="divider reveal">
+    <div class="divider-line"></div>
+    <div class="divider-text">✦ Thực Đơn Ngày Tết ✦</div>
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- ══════════════════════════════════
+       FOOD GRID
+  ══════════════════════════════════ -->
+  <section class="at-menu">
+
+    <!-- HÀNG 1 — 2 món -->
+    <div class="at-row at-row--2">
+
+      <div class="food-card reveal">
+        <div class="food-card__img-wrap">
+          <!--
+            THÊM ẢNH: Xóa food-card__placeholder, thay bằng:
+            <img src="images/banh-tet.jpg" alt="Bánh Tét" />
+          -->
+         <img src="./img/banhchung1.jpg" alt="">
+          <div class="food-card__overlay"></div>
+          <div class="food-card__badge">01</div>
+        </div>
+        <div class="food-card__info">
+          <h3 class="food-card__name"> <em>Bánh Chưng</em></h3>
+          <p class="food-card__desc">Linh hồn của mâm Tết miền Nam. Bánh chưng được gói bằng lá chuối tươi, nhân đậu xanh và thịt ba rọi béo ngậy, buộc chặt rồi luộc cả đêm. Đặc trưng không thể thiếu trong nhà nào dịp Xuân về.</p>
+        </div>
+      </div>
+
+      <div class="food-card reveal" style="transition-delay:0.15s">
+        <div class="food-card__img-wrap">
+         <img src="./img/thitkho.jpg" alt="Thịt kho họt vịt">
+          <div class="food-card__overlay"></div>
+          <div class="food-card__badge">02</div>
+        </div>
+        <div class="food-card__info">
+          <h3 class="food-card__name"> <em> Thịt Kho Hột Vịt</em> </h3>
+          <p class="food-card__desc">Nồi thịt kho hột vịt nước dừa là món không thể thiếu trên mâm cơm Tết miền Nam.</p>
+        </div>
+      </div>
+
+    </div>
+     <!-- HÀNG 2 — 3 món -->
+    <div class="at-row at-row--3">
+
+      <div class="food-card reveal">
+        <div class="food-card__img-wrap">
+          <img src="./img/khoqua.jpg" alt="canh khổ qua">
+          <div class="food-card__overlay"></div>
+          <div class="food-card__badge">03</div>
+        </div>
+        <div class="food-card__info">
+          <h3 class="food-card__name">Canh Khổ Qua</h3>
+          <p class="food-card__desc">Tên "khổ qua" theo quan niệm dân gian nghĩa là qua đi những khổ cực của năm cũ. Khổ qua nhồi thịt hầm trong nước dùng trong vắt, vị đắng thanh hòa quyện với thịt ngọt — thanh mát và đầy ý nghĩa.</p>
+        </div>
+      </div>
+
+      <div class="food-card reveal" style="transition-delay:0.1s">
+        <div class="food-card__img-wrap">
+        <img src="./img/duagia.jpg" alt="dua giá củ kiệu">
+          <div class="food-card__overlay"></div>
+          <div class="food-card__badge">04</div>
+        </div>
+        <div class="food-card__info">
+          <h3 class="food-card__name"><em> Dưa Giá Củ Kiệu</em> </h3>
+          <p class="food-card__desc">Bộ đôi không thể tách rời của Tết miền Nam. Dưa giá trắng giòn, củ kiệu ngâm chua ngọt — ăn kèm thịt kho hay bánh tét thì không gì sánh bằng. Mùi củ kiệu thơm nồng là mùi Tết đặc trưng miền Nam.</p>
+        </div>
+      </div>
+
+      <div class="food-card reveal" style="transition-delay:0.2s">
+        <div class="food-card__img-wrap">
+       <img src="./img/chagio.jpg" alt="chả giò">
+          <div class="food-card__overlay"></div>
+          <div class="food-card__badge">05</div>
+        </div>
+        <div class="food-card__info">
+          <h3 class="food-card__name">Chả Giò</h3>
+          <p class="food-card__desc">Chả giò là món ăn truyền thống không thể thiếu trong ẩm thực Việt Nam. Lớp vỏ giòn tan bên ngoài hòa quyện với nhân thịt bên trong. Tất cả tạo nên sự đa dạng về hương vị riêng biệt.</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- HÀNG 3 — 2 món -->
+    <div class="at-row at-row--2">
+
+      <div class="food-card reveal">
+        <div class="food-card__img-wrap">
+        <img src="./img/galuoc.jpg" alt="gà luộc lá chanh ">
+          <div class="food-card__overlay"></div>
+          <div class="food-card__badge">06</div>
+        </div>
+        <div class="food-card__info">
+          <h3 class="food-card__name"> <em>Gà Luộc Lá Chanh</em></h3>
+          <p class="food-card__desc">Gà luộc lá chanh là món ăn truyền thống Việt Nam với da vàng giòn, thịt ngọt, thơm mùi lá chanh. Bí quyết là luộc gà lửa nhỏ (hoặc hấp) cùng gừng/hành tím trong 15-20 phút, sau đó vớt ra ngâm nước đá để da săn chắc. Lá chanh thái sợi rắc lên khi ăn giúp tăng hương vị.</p>
+        </div>
+      </div>
+
+      <div class="food-card reveal" style="transition-delay:0.15s">
+        <div class="food-card__img-wrap">
+          <img src="./img/thitdonmg.jpg" alt="thịt đông">
+          <div class="food-card__overlay"></div>
+          <div class="food-card__badge">07</div>
+        </div>
+        <div class="food-card__info">
+          <h3 class="food-card__name"> <em>Thịt Đông</em></h3>
+          <p class="food-card__desc">Thịt đông là món ăn truyền thống đặc trưng của miền Bắc Việt Nam vào dịp Tết hoặc mùa đông lạnh.Món này kết hợp thịt chân giò, bì heo, mộc nhĩ và nấm hươngđược ninh nhừ để collagen trong bì tạo nên lớp đông tự nhiên. Thịt có độ trong, vị thanh mátăn kèm dưa hành, củ kiệu và cơm nóng.</p>
+        </div>
+      </div>
+
+    </div>
+
+     <!-- HÀNG 4 — 3 món -->
+    <div class="at-row at-row--3">
+
+      <div class="food-card reveal">
+        <div class="food-card__img-wrap">
+        <img src="./img/giothu.jpg" alt="giò thủ">
+          <div class="food-card__overlay"></div>
+          <div class="food-card__badge">08</div>
+        </div>
+        <div class="food-card__info">
+          <h3 class="food-card__name">Giò Thủ</h3>
+          <p class="food-card__desc">Giò thủ là món ăn truyền thống không thể thiếu trong dịp Tết, nổi bật với độ giòn sần sật của tai, lưỡi heo, mũi, mép, thơm mùi nấm mèo và tiêu xay. Món ăn tượng trưng cho sự ấm êm, may mắn, thường ăn kèm dưa hành, củ kiệu để cân bằng vị béo.</p>
+        </div>
+      </div>
+
+      <div class="food-card reveal" style="transition-delay:0.1s">
+        <div class="food-card__img-wrap">
+          <img src="./img/nem.jpg" alt="nem chua">
+\          <div class="food-card__overlay"></div>
+          <div class="food-card__badge">09</div>
+        </div>
+        <div class="food-card__info">
+          <h3 class="food-card__name"><em>Nem Chua</em></h3>
+          <p class="food-card__desc">Nem chua không chỉ là món ăn kèm với vị chua thanh, cay nồng đặc trưng, mà còn tượng trưng cho sự gắn kết, may mắn với sắc hồng tự nhiên, mang ý nghĩa ấm lòng, trân trọng khi làm quà biếu, góp phần làm trọn vị bữa cơm sum vầy ngày xuân.</p>
+        </div>
+      </div>
+
+      <div class="food-card reveal" style="transition-delay:0.2s">
+        <div class="food-card__img-wrap">
+         <img src="./img/chalua.jpg" alt="chả lụa">
+          <div class="food-card__overlay"></div>
+          <div class="food-card__badge">10</div>
+        </div>
+        <div class="food-card__info">
+          <h3 class="food-card__name">Chả Lụa</h3>
+          <p class="food-card__desc">Chả lụa (giò lụa) là món ăn truyền thống không thể thiếu trong mâm cỗ Tết Việt Nam, nổi bật với vị dai giòn, thơm béo từ thịt heo tươi, nước mắm ngon và lá chuối.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- HÀNG 5 — 2 món -->
+    <div class="at-row at-row--2">
+
+      <div class="food-card reveal">
+        <div class="food-card__img-wrap">
+          <img src="./img/xoigac.jpg" alt="">
+          <div class="food-card__overlay"></div>
+          <div class="food-card__badge">11</div>
+        </div>
+        <div class="food-card__info">
+          <h3 class="food-card__name"><em>Xôi Gấc</em></h3>
+          <p class="food-card__desc">Xôi gấc có vị dẻo thơm của những hạt lúa nếp, có màu đỏ tươi tắn, còn chứa đựng đủ vị bùi, béo, ngậy... rất đặc trưng từ quả gấc.</p>
+        </div>
+      </div>
+
+      <div class="food-card reveal" style="transition-delay:0.15s">
+        <div class="food-card__img-wrap">
+          <img src="./img/mut.jpg" alt="mứt dừa">
+          <div class="food-card__overlay"></div>
+          <div class="food-card__badge">12</div>
+        </div>
+        <div class="food-card__info">
+          <h3 class="food-card__name"><em>Mứt Dừa</em></h3>
+          <p class="food-card__desc">Mứt dừa được xem là món ngon truyền thống trong những dịp lễ tết tại Việt Nam. Với hương vị thơm ngon, và cách làm mứt dừa đơn giản tại nhà thì đây là món ăn không thể thiếu của mỗi người dân Việt.</p>
+        </div>
+      </div>
+
+    </div>
+
+</section>
+
+<!-- PULL QUOTE -->
+  <div class="pull-quote reveal">
+    <p class="pull-quote-text">
+      Mâm cỗ ngày Tết không cần cầu kỳ<br>
+      chỉ cần <em>đủ mặt người thân</em> là đã đủ đầy
+    </p>
+    <p class="pull-quote-author">Hãy trân trọng người bên cạnh mình nhìu hơn nhe</p>
+  </div>
+
+  <!-- ══ FOOTER ══ -->
+  <footer id="contact">
+    <div>
+      <div class="footer-brand">Tết Quê Hương</div>
+      <p class="footer-tagline">Lưu giữ và tôn vinh những giá trị văn hóa truyền thống Việt Nam qua từng mùa Xuân.</p>
+    </div>
+    <div>
+      <p class="footer-col-title">Khám Phá</p>
+      <ul class="footer-links">
+        <li><a href="./index.html">Trang Chủ</a></li>
+        <li><a href="./cuatoi.html">Giới Thiệu</a></li>
+        <li><a href="./amthuc.html">Ẩm Thực</a></li>
+        <li><a href="vanhoa.html">Văn Hóa</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Chủ Đề</p>
+      <ul class="footer-links">
+        <li><a href="vanhoa.html">Văn Hóa</a></li>
+        <li><a href="vanhoa.html">Nghệ Thuật</a></li>
+        <li><a href="amthuc.html">Ẩm Thực</a></li>
+        <li><a href="cuatoi.html">Du Lịch</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Liên Hệ</p>
+      <ul class="footer-links">
+     <li><a href="lienhe.html">Email</a></li>
+        <li><a href="lienhe.html">Facebook</a></li>
+        <li><a href="lienhe.html">Instagram</a></li>
+        <li><a href="lienhe.html">YouTube</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Tết Quê Hương. Made with <span class="footer-heart">♥</span> by MAI KHANH</p>
+      <p class="footer-copy">Chúc Mừng Năm Mới · Bính Ngọ 2026</p>
+    </div>
+  </footer>
+
+  <!-- ══ JAVASCRIPT ══ -->
+  <script>
+    // Custom Cursor
+    const cursor = document.getElementById('cursor');
+    const ring   = document.getElementById('cursor-ring');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top  = e.clientY + 'px';
+      ring.style.left   = e.clientX + 'px';
+      ring.style.top    = e.clientY + 'px';
+    });
+    document.querySelectorAll('a, button, .card').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.style.width = '20px'; cursor.style.height = '20px';
+        cursor.style.background = 'var(--red)';
+        ring.style.width = '60px'; ring.style.height = '60px';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.style.width = '10px'; cursor.style.height = '10px';
+        cursor.style.background = 'var(--gold)';
+        ring.style.width = '36px'; ring.style.height = '36px';
+      });
+    });
+
+    // Particles
+    const container = document.getElementById('particles');
+   if (container) {
+    for (let i = 0; i < 30; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      p.style.left              = Math.random() * 100 + '%';
+      p.style.width             = p.style.height = (Math.random() * 3 + 1) + 'px';
+      p.style.animationDuration = (Math.random() * 12 + 8) + 's';
+      p.style.animationDelay    = (Math.random() * 10) + 's';
+      p.style.background        = Math.random() > 0.5 ? 'var(--gold)' : 'var(--red-light)';
+      container.appendChild(p);
+    }
+   }
+    // Scroll Reveal
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+  document.querySelectorAll(
+  '.reveal, .img-reveal, .img-reveal-left, .img-reveal-right'
+).forEach(el => observer.observe(el));
+
+    // Navbar scroll effect
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 80) {
+        nav.style.background     = 'rgba(10,8,6,0.92)';
+        nav.style.backdropFilter = 'blur(12px)';
+        nav.style.borderBottom   = '1px solid rgba(212,175,55,0.1)';
+      } else {
+        nav.style.background     = 'transparent';
+        nav.style.backdropFilter = 'none';
+        nav.style.borderBottom   = 'none';
+      }
+    });
+
+    // Video fallback
+   const video    = document.querySelector('.hero-video');
+const fallback = document.querySelector('.hero-bg-fallback');
+if (video && fallback) {
+  video.addEventListener('canplay', () => { fallback.style.opacity = '0'; });
+  video.addEventListener('error',   () => { fallback.style.opacity = '1'; });
+}
+  // ── Parallax mượt với requestAnimationFrame ──
+let ticking = false;
+
+function updateParallax() {
+  document.querySelectorAll('.parallax-wrap').forEach(wrap => {
+    const img   = wrap.querySelector('.parallax-img');
+    if (!img) return;
+
+    const speed = parseFloat(img.dataset.speed) || 40;
+    const rect  = wrap.getBoundingClientRect();
+    const ratio = (rect.top + rect.height / 2 - window.innerHeight / 2)
+                  / window.innerHeight;
+
+    img.style.transform = `translateY(${ratio * speed}px)`;
+  });
+
+  ticking = false;
+}
+
+window.addEventListener('scroll', () => {
+  if (!ticking) {
+    requestAnimationFrame(updateParallax);
+    ticking = true;
+  }
+}, { passive: true });
+
+updateParallax();
+// ── Hamburger Menu ──
+const navToggle = document.getElementById('nav-toggle');
+const navLinks  = document.getElementById('nav-links');
+
+navToggle.addEventListener('click', () => {
+  navToggle.classList.toggle('active');
+  navLinks.classList.toggle('open');
+});
+
+// Đóng menu khi click vào link
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navToggle.classList.remove('active');
+    navLinks.classList.remove('open');
+  });
+});
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tết Quê Hương — Văn Hóa Mùa Xuân</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Be+Vietnam+Pro:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav>
+    <a href="#" class="nav-logo">Tết <span>Quê Hương</span> <br> Mai Khanh</a> 
+  <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Trang Chủ</a></li>
+      <li><a href="cuatoi.html">Phong Tục</a></li>
+      <li><a href="amthuc.html">Ẩm Thực</a></li>
+      <li><a href="vanhoa.html">Văn Hóa</a></li>
+      <li><a href="trochoi.html">Trò Chơi Hái Lộc</a></li>
+      <li><a href="lienhe.html">Liên Hệ</a></li>
+    </ul>
+    <a href="lienhe.html" class="nav-contact">Khám Phá</a>
+  </nav>
+
+<!-- ══ HERO ══ -->
+  <section id="hero">
+
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="./video/canhdong.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-bg-fallback"></div>
+    <div class="particles" id="particles"></div>
+    <div class="lanterns">
+      <div class="lantern"></div>
+      <div class="lantern"></div>
+      <div class="lantern"></div>
+      <div class="lantern"></div>
+      <div class="lantern"></div>
+      <div class="lantern"></div>
+      <div class="lantern"></div>
+      <div class="lantern"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Mừng Xuân Bính Ngọ 2026</p>
+      <h1 class="hero-title">
+        Mùa Xuân<br>
+        <strong>Thành Phố</strong>
+      </h1>
+      <p class="hero-subtitle">Hương vị, Sắc màu &amp; Hồn Việt</p>
+      <div class="hero-cta-group">
+        <a href="#cuatoi" class="btn-primary">Khám Phá Ngay</a>
+        <a href="vanhoa.html" class="btn-secondary">Văn Hóa Địa Phương</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Cuộn Xuống</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-social">
+      <a href="#">Không Khí</a>
+      <a href="#">Tết Việt</a>
+    </div>
+    <div class="year-badge">
+      <span>Tết Nguyên Đán</span>
+      <strong>2026</strong>
+    </div>
+  </section>
+
+  <!-- ══ TICKER ══ -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-item">Chúc Mừng Năm Mới</span>
+      <span class="ticker-item">Bính Ngọ 2026</span>
+      <span class="ticker-item">An Khang Thịnh Vượng</span>
+      <span class="ticker-item">Vạn Sự Như Ý</span>
+      <span class="ticker-item">Hương Vị Quê Hương</span>
+      <span class="ticker-item">Tết Việt Nam</span>
+      <span class="ticker-item">Chúc Mừng Năm Mới</span>
+      <span class="ticker-item">Bính Ngọ 2026</span>
+      <span class="ticker-item">An Khang Thịnh Vượng</span>
+      <span class="ticker-item">Vạn Sự Như Ý</span>
+      <span class="ticker-item">Hương Vị Quê Hương</span>
+      <span class="ticker-item">Tết Việt Nam</span>
+    </div>
+  </div>
+
+  <!-- ══ ABOUT ══ -->
+  <section id="about">
+    <div class="reveal">
+      <p class="about-label">✦ Giới thiệu nho nhỏ</p>
+      <h2 class="about-heading">
+        Nơi <em>Xuân</em> về<br>
+        trên từng<br>
+        ngưỡng cửa
+      </h2>
+      <p class="about-body">
+        Tết Nguyên Đán không chỉ là một ngày lễ — đó là linh hồn của dân tộc, là sợi chỉ đỏ nối kết bao thế hệ. Từ mùi hương trầm khói, tiếng pháo rộn ràng, đến màu vàng rực rỡ của hoa mai, mỗi khoảnh khắc Tết đều ẩn chứa câu chuyện của cha ông.
+      </p>
+      <div class="about-stats">
+        <div class="stat-item">
+          <div class="stat-num">4000+</div>
+          <div class="stat-label">Năm lịch sử</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">54</div>
+          <div class="stat-label">Dân tộc anh em</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">Hương vị quê nhà</div>
+        </div>
+      </div>
+    </div>
+    <div class="about-image-wrap reveal">
+        <!-- Ảnh chính: lộ từ dưới lên -->
+  <div class="about-image">
+    <div class="img-reveal-wrap" style="height:100%">
+       <img class="img-reveal"
+           src="./img/083A7771-683x1024.jpg"
+           alt="Tết Quê Hương" />
+      </div>
+  </div>
+      <div class="about-image-badge">
+        <strong>TẾT</strong>
+        Nguyên Đán
+      </div>
+    </div>
+  </section>
+  <!-- TETCUATOI-->
+<section id="cuatoi">
+<div class="cuatoitext reveal">
+<div>
+    <h1 class="cuatoi-heading">Khi Xuân <em>Gõ Cửa</em> <br> Nhà Em</h1>
+    <p class="cuatoi-label">Từ những cành đào rực rỡ, pháo hoa rộn ràng, đến hương trầm ấm áp và tiếng cười trẻ thơ nhận bao lì xì đỏ — mỗi khoảnh khắc Tết đều mang một vẻ đẹp khó quên, in sâu vào tâm hồn mỗi người con đất Việt.</p>
+<a href="./cuatoi.html" class="btn-third">Tìm hiểu thêm</a>
+</div>
+</div>
+</section>
+  <!-- ══ HIGHLIGHTS ══ -->
+  <section id="highlights">
+    <div class="section-header reveal">
+      <div>
+        <p class="section-label">✦ Khám Phá</p>
+        <h2 class="section-heading">Hương vị &amp;<br><em>Sắc màu</em> Tết</h2>
+      </div>
+    </div>
+   <div class="card-grid">
+
+  <!-- Card 1 → cuatoi.html -->
+  <a href="./cuatoi.html" class="card">
+    <div class="card-bg card-bg-1"></div>
+    <div class="card-icon">🏮</div>
+    <div class="card-overlay"></div>
+    <div class="card-content">
+      <p class="card-tag">Giới Thiệu</p>
+      <h3 class="card-title">Đêm Giao Thừa Linh Thiêng</h3>
+      <p class="card-desc">Khoảnh khắc chuyển giao thiêng liêng...</p>
+      <span class="card-arrow">Tìm Hiểu Thêm</span>
+    </div>
+  </a>
+
+  <!-- Card 2 → amthuc.html -->
+  <a href="./amthuc.html" class="card">
+    <div class="card-bg card-bg-2"></div>
+    <div class="card-icon">🍜</div>
+    <div class="card-overlay"></div>
+    <div class="card-content">
+      <p class="card-tag">Ẩm Thực</p>
+      <h3 class="card-title">Bánh Chưng Xanh</h3>
+      <p class="card-desc">Linh hồn của mâm cỗ Tết Bắc...</p>
+      <span class="card-arrow">Xem Công Thức</span>
+    </div>
+  </a>
+
+  <!-- Card 3 → vanhoa.html -->
+  <a href="./vanhoa.html" class="card">
+    <div class="card-bg card-bg-3"></div>
+    <div class="card-icon">🌸</div>
+    <div class="card-overlay"></div>
+    <div class="card-content">
+      <p class="card-tag">Hoa Tết</p>
+      <h3 class="card-title">Mai Vàng Nở Rộ</h3>
+      <p class="card-desc">Sắc vàng rực rỡ của hoa mai...</p>
+      <span class="card-arrow">Khám Phá</span>
+    </div>
+  </a>
+
+  <!-- Card 4 → phongtuc.html -->
+  <a href="cuatoi.html" class="card">
+    <div class="card-bg card-bg-4"></div>
+    <div class="card-icon">🎁</div>
+    <div class="card-overlay"></div>
+    <div class="card-content">
+      <p class="card-tag">Phong Tục</p>
+      <h3 class="card-title">Lì Xì Đầu Năm</h3>
+      <p class="card-desc">Chiếc phong bao đỏ nhỏ bé...</p>
+      <span class="card-arrow">Tìm Hiểu</span>
+    </div>
+  </a>
+
+  <!-- Card 5 → vanhoa.html -->
+  <a href="vanhoa.html" class="card">
+    <div class="card-bg card-bg-5"></div>
+    <div class="card-icon">🥁</div>
+    <div class="card-overlay"></div>
+    <div class="card-content">
+      <p class="card-tag">Nghệ Thuật</p>
+      <h3 class="card-title">Múa Lân Rộn Ràng</h3>
+      <p class="card-desc">Tiếng trống giong giả...</p>
+      <span class="card-arrow">Xem Thêm</span>
+    </div>
+  </a>
+
+</div>
+  </section>
+
+  <!-- ══ QUOTE ══ -->
+  <section id="quote">
+    <span class="quote-mark reveal">"</span>
+    <blockquote class="quote-text reveal">
+      Dù đi xa muôn dặm, mỗi năm Tết đến,<br>
+      lòng người vẫn <em>hướng về mái nhà xưa</em>
+    </blockquote>
+    <p class="quote-author reveal">Ca dao Việt Nam</p>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer id="contact">
+    <div>
+      <div class="footer-brand">Tết Quê Hương</div>
+      <p class="footer-tagline">Lưu giữ và tôn vinh những giá trị văn hóa truyền thống Việt Nam qua từng mùa Xuân.</p>
+    </div>
+    <div>
+      <p class="footer-col-title">Khám Phá</p>
+      <ul class="footer-links">
+        <li><a href="./index.html">Trang Chủ</a></li>
+        <li><a href="./cuatoi.html">Phong Tục</a></li>
+        <li><a href="./amthuc.html">Ẩm Thực</a></li>
+        <li><a href="./vanhoa.html">Văn Hóa</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Chủ Đề</p>
+      <ul class="footer-links">
+      <li><a href="vanhoa.html">Văn Hóa</a></li>
+        <li><a href="vanhoa.html">Nghệ Thuật</a></li>
+        <li><a href="amthuc.html">Ẩm Thực</a></li>
+        <li><a href="cuatoi.html">Du Lịch</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Liên Hệ</p>
+      <ul class="footer-links">
+        <li><a href="lienhe.html">Email</a></li>
+        <li><a href="lienhe.html">Facebook</a></li>
+        <li><a href="lienhe.html">Instagram</a></li>
+        <li><a href="lienhe.html">YouTube</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Tết Quê Hương. Made with <span class="footer-heart">♥</span> by MAI KHANH</p>
+      <p class="footer-copy">Chúc Mừng Năm Mới · Bính Ngọ 2026</p>
+    </div>
+  </footer>
+
+  <!-- ══ JAVASCRIPT ══ -->
+  <script>
+    // Custom Cursor
+    const cursor = document.getElementById('cursor');
+    const ring   = document.getElementById('cursor-ring');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top  = e.clientY + 'px';
+      ring.style.left   = e.clientX + 'px';
+      ring.style.top    = e.clientY + 'px';
+    });
+    document.querySelectorAll('a, button, .card').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.style.width = '20px'; cursor.style.height = '20px';
+        cursor.style.background = 'var(--red)';
+        ring.style.width = '60px'; ring.style.height = '60px';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.style.width = '10px'; cursor.style.height = '10px';
+        cursor.style.background = 'var(--gold)';
+        ring.style.width = '36px'; ring.style.height = '36px';
+      });
+    });
+
+    // Particles
+    const container = document.getElementById('particles');
+    for (let i = 0; i < 30; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      p.style.left              = Math.random() * 100 + '%';
+      p.style.width             = p.style.height = (Math.random() * 3 + 1) + 'px';
+      p.style.animationDuration = (Math.random() * 12 + 8) + 's';
+      p.style.animationDelay    = (Math.random() * 10) + 's';
+      p.style.background        = Math.random() > 0.5 ? 'var(--gold)' : 'var(--red-light)';
+      container.appendChild(p);
+    }
+
+    // Scroll Reveal
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+  document.querySelectorAll(
+  '.reveal, .img-reveal, .img-reveal-left, .img-reveal-right'
+).forEach(el => observer.observe(el));
+
+    // Navbar scroll effect
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 80) {
+        nav.style.background     = 'rgba(10,8,6,0.92)';
+        nav.style.backdropFilter = 'blur(12px)';
+        nav.style.borderBottom   = '1px solid rgba(212,175,55,0.1)';
+      } else {
+        nav.style.background     = 'transparent';
+        nav.style.backdropFilter = 'none';
+        nav.style.borderBottom   = 'none';
+      }
+    });
+
+    // Video fallback
+    const video    = document.querySelector('.hero-video');
+    const fallback = document.querySelector('.hero-bg-fallback');
+    video.addEventListener('canplay', () => { fallback.style.opacity = '0'; });
+    video.addEventListener('error',   () => { fallback.style.opacity = '1'; });
+  // ── Parallax mượt với requestAnimationFrame ──
+let ticking = false;
+
+function updateParallax() {
+  document.querySelectorAll('.parallax-wrap').forEach(wrap => {
+    const img   = wrap.querySelector('.parallax-img');
+    if (!img) return;
+
+    const speed = parseFloat(img.dataset.speed) || 40;
+    const rect  = wrap.getBoundingClientRect();
+    const ratio = (rect.top + rect.height / 2 - window.innerHeight / 2)
+                  / window.innerHeight;
+
+    img.style.transform = `translateY(${ratio * speed}px)`;
+  });
+
+  ticking = false;
+}
+
+window.addEventListener('scroll', () => {
+  if (!ticking) {
+    requestAnimationFrame(updateParallax);
+    ticking = true;
+  }
+}, { passive: true });
+
+updateParallax();
+// ── Hamburger Menu ──
+const navToggle = document.getElementById('nav-toggle');
+const navLinks  = document.getElementById('nav-links');
+
+navToggle.addEventListener('click', () => {
+  navToggle.classList.toggle('active');
+  navLinks.classList.toggle('open');
+});
+
+// Đóng menu khi click vào link
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navToggle.classList.remove('active');
+    navLinks.classList.remove('open');
+  });
+});
+
+  </script>
+
+
+</body>
+</html>

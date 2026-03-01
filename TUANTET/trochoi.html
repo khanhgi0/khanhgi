@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tết Gõ Cửa</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Be+Vietnam+Pro:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav>
+    <a href="#" class="nav-logo">Tết <span>Quê Hương</span> <br> Mai Khanh</a> 
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Trang Chủ</a></li>
+      <li><a href="cuatoi.html" >Phong Tục</a></li>
+      <li><a href="amthuc.html">Ẩm Thực</a></li>
+      <li><a href="vanhoa.html">Văn Hóa</a></li>
+         <li><a href="trochoi.html">Trò Chơi Hái Lộc</a></li>
+      <li><a href="lienhe.html">Liên Hệ</a></li>
+    </ul>
+    <a href="lienhe.html" class="nav-contact">Khám Phá</a>
+  </nav>
+
+<section id="lixi-game" class="reveal">
+    <div class="game-header">
+        <p class="section-label">✦ Mini Game ✦</p>
+        <h2 class="section-heading">Hứng <em>Lộc</em> Đầu Năm</h2>
+        <div class="score-board">Lộc đã hái: <span id="score">0</span></div>
+    </div>
+    
+    <div class="canvas-container">
+        <canvas id="gameCanvas"></canvas>
+     <div id="game-overlay">
+    <div id="start-screen">
+        <button id="start-btn" class="nav-contact">Bắt Đầu Hái Lộc</button>
+        <p style="color: var(--gold); margin-top: 15px; font-size: 12px;">Hái đủ 20 lộc để nhận quà Xuân!</p>
+    </div>
+    
+    <div id="win-screen" style="display: none; text-align: center;">
+        <h3 style="color: var(--gold); font-family: 'Cormorant Garamond', serif; font-size: 32px;">Chúc Mừng Năm Mới!</h3>
+        <p style="color: var(--cream); margin: 15px 0;">Bạn đã hái đủ 20 lộc may mắn.</p>
+        <div style="border: 1px dashed var(--gold); padding: 10px; color: var(--gold); font-weight: bold;">
+             <span style="font-size: 20px;">Tâm an vạn sự an <br> Tâm lành vạn sự lành <br>Tâm thiện sống dài lâu !! </span>
+        </div>
+        <button onclick="location.reload()" class="nav-contact" style="margin-top: 20px;">Chơi Lại</button>
+    </div>
+</div>
+    </div>
+</section>
+
+ 
+
+  <!-- ══ FOOTER ══ -->
+  <footer id="contact">
+    <div>
+      <div class="footer-brand">Tết Quê Hương</div>
+      <p class="footer-tagline">Lưu giữ và tôn vinh những giá trị văn hóa truyền thống Việt Nam qua từng mùa Xuân.</p>
+    </div>
+    <div>
+      <p class="footer-col-title">Khám Phá</p>
+      <ul class="footer-links">
+        <li><a href="./index.html">Trang Chủ</a></li>
+        <li><a href="./cuatoi.html">Phong Tục</a></li>
+        <li><a href="./amthuc.html">Ẩm Thực</a></li>
+        <li><a href="./vanhoa.html">Văn Hóa</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Chủ Đề</p>
+      <ul class="footer-links">
+        <li><a href="vanhoa.html">Văn Hóa</a></li>
+        <li><a href="vanhoa.html">Nghệ Thuật</a></li>
+        <li><a href="amthuc.html">Ẩm Thực</a></li>
+        <li><a href="cuatoi.html">Du Lịch</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Liên Hệ</p>
+      <ul class="footer-links">
+        <li><a href="#">Email</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">YouTube</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Tết Quê Hương. Made with <span class="footer-heart">♥</span> by MAI KHANH</p>
+      <p class="footer-copy">Chúc Mừng Năm Mới · Bính Ngọ 2026</p>
+    </div>
+  </footer>
+      <!-- ══ JAVASCRIPT ══ -->
+  <script>
+    // Custom Cursor
+    const cursor = document.getElementById('cursor');
+    const ring   = document.getElementById('cursor-ring');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top  = e.clientY + 'px';
+      ring.style.left   = e.clientX + 'px';
+      ring.style.top    = e.clientY + 'px';
+    });
+    document.querySelectorAll('a, button, .card').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.style.width = '20px'; cursor.style.height = '20px';
+        cursor.style.background = 'var(--red)';
+        ring.style.width = '60px'; ring.style.height = '60px';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.style.width = '10px'; cursor.style.height = '10px';
+        cursor.style.background = 'var(--gold)';
+        ring.style.width = '36px'; ring.style.height = '36px';
+      });
+    });
+
+    // Particles
+    const container = document.getElementById('particles');
+    if (container){
+    for (let i = 0; i < 30; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      p.style.left              = Math.random() * 100 + '%';
+      p.style.width             = p.style.height = (Math.random() * 3 + 1) + 'px';
+      p.style.animationDuration = (Math.random() * 12 + 8) + 's';
+      p.style.animationDelay    = (Math.random() * 10) + 's';
+      p.style.background        = Math.random() > 0.5 ? 'var(--gold)' : 'var(--red-light)';
+      container.appendChild(p);
+    }
+    }
+    // Scroll Reveal
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+  document.querySelectorAll(
+  '.reveal, .reveal-left, .reveal-right, .img-reveal, .img-reveal-left, .img-reveal-right'
+).forEach(el => observer.observe(el));
+
+    // Navbar scroll effect
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 80) {
+        nav.style.background     = 'rgba(10,8,6,0.92)';
+        nav.style.backdropFilter = 'blur(12px)';
+        nav.style.borderBottom   = '1px solid rgba(212,175,55,0.1)';
+      } else {
+        nav.style.background     = 'transparent';
+        nav.style.backdropFilter = 'none';
+        nav.style.borderBottom   = 'none';
+      }
+    });
+
+    // Video fallback
+    const video    = document.querySelector('.hero-video');
+const fallback = document.querySelector('.hero-bg-fallback');
+if (video && fallback) {
+  video.addEventListener('canplay', () => { fallback.style.opacity = '0'; });
+  video.addEventListener('error',   () => { fallback.style.opacity = '1'; });
+}
+  // ── Parallax mượt với requestAnimationFrame ──
+let ticking = false;
+
+function updateParallax() {
+  document.querySelectorAll('.parallax-wrap').forEach(wrap => {
+    const img   = wrap.querySelector('.parallax-img');
+    if (!img) return;
+
+    const speed = parseFloat(img.dataset.speed) || 40;
+    const rect  = wrap.getBoundingClientRect();
+    const ratio = (rect.top + rect.height / 2 - window.innerHeight / 2)
+                  / window.innerHeight;
+
+    img.style.transform = `translateY(${ratio * speed}px)`;
+  });
+
+  ticking = false;
+}
+
+window.addEventListener('scroll', () => {
+  if (!ticking) {
+    requestAnimationFrame(updateParallax);
+    ticking = true;
+  }
+}, { passive: true });
+
+updateParallax();
+// Đếm ký tự
+const textarea  = document.getElementById('message');
+const charCount = document.getElementById('char-count');
+if (textarea && charCount) {
+  textarea.addEventListener('input', () => {
+    const len = Math.min(textarea.value.length, 500);
+    charCount.textContent = len;
+    if (textarea.value.length > 500) textarea.value = textarea.value.slice(0, 500);
+  });
+}
+
+// Validate & submit
+const form    = document.getElementById('lh-form');
+const success = document.getElementById('form-success');
+const btn     = document.getElementById('submit-btn');
+
+function showError(inputId, errId, show) {
+  const input = document.getElementById(inputId);
+  const err   = document.getElementById(errId);
+  if (!input || !err) return;
+  input.classList.toggle('lh-form__input--error', show);
+  err.classList.toggle('lh-form__error--show', show);
+}
+
+if (form) {
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    let valid = true;
+    const emailReg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    const checks = [
+      ['fullname', 'err-fullname', !document.getElementById('fullname').value.trim()],
+      ['email',    'err-email',    !emailReg.test(document.getElementById('email').value.trim())],
+      ['subject',  'err-subject',  !document.getElementById('subject').value.trim()],
+      ['message',  'err-message',  !document.getElementById('message').value.trim()],
+    ];
+
+    checks.forEach(([id, errId, invalid]) => {
+      showError(id, errId, invalid);
+      if (invalid) valid = false;
+    });
+
+    if (!valid) return;
+
+    btn.textContent = 'Đang gửi...';
+    btn.disabled = true;
+    btn.style.opacity = '0.6';
+
+    setTimeout(() => {
+      form.style.opacity = '0';
+      form.style.transform = 'translateY(-20px)';
+      setTimeout(() => {
+        form.style.display = 'none';
+        success.classList.add('lh-form__success--show');
+      }, 400);
+    }, 1200);
+  });
+
+  ['fullname','email','subject','message'].forEach(id => {
+    const errMap = { fullname:'err-fullname', email:'err-email', subject:'err-subject', message:'err-message' };
+    document.getElementById(id)?.addEventListener('input', () => showError(id, errMap[id], false));
+  });
+}const canvas = document.getElementById('gameCanvas');
+const ctx = canvas.getContext('2d');
+const startBtn = document.getElementById('start-btn');
+const overlay = document.getElementById('game-overlay');
+const scoreEl = document.getElementById('score');
+
+// KHAI BÁO ÂM THANH
+const catchSound = new Audio('./sounds/ting.mp3');
+const winSound = new Audio('./sounds/win.mp3');
+
+canvas.width = 800; canvas.height = 500;
+let score = 0; let gameActive = false; let lixis = [];
+const player = { x: 350, y: 440, w: 120, h: 25 };
+
+canvas.addEventListener('mousemove', (e) => {
+    const rect = canvas.getBoundingClientRect();
+    player.x = (e.clientX - rect.left) * (canvas.width / rect.width) - player.w / 2;
+});
+
+function update() {
+    if (!gameActive) return;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = '#D4AF37'; // Màu Gold của Deara
+    ctx.fillRect(player.x, player.y, player.w, player.h);
+
+    lixis.forEach((lixi, index) => {
+        lixi.y += lixi.speed;
+        ctx.fillStyle = '#aa3225'; // Màu Đỏ Tết
+        ctx.fillRect(lixi.x, lixi.y, 25, 35);
+        ctx.font = "18px serif"; ctx.fillText('🧧', lixi.x + 2, lixi.y + 22);
+
+        // VA CHẠM & XỬ LÝ ÂM THANH
+        if (lixi.y + 35 > player.y && lixi.x + 25 > player.x && lixi.x < player.x + player.w) {
+            score++;
+            scoreEl.innerText = score;
+            lixis.splice(index, 1);
+            catchSound.currentTime = 0; catchSound.play(); // Tiếng Ting!
+
+            if (score >= 20) { // GIỚI HẠN 20 LỘC
+                gameActive = false;
+                winSound.play(); // Nhạc chiến thắng
+                document.getElementById('start-screen').style.display = 'none';
+                document.getElementById('win-screen').style.display = 'block';
+                overlay.style.display = 'flex';
+            }
+        }
+        if (lixi.y > canvas.height) lixis.splice(index, 1);
+    });
+
+    if (Math.random() < 0.04) {
+        lixis.push({ x: Math.random() * (canvas.width - 30), y: -50, speed: 3 + Math.random() * 3 });
+    }
+    requestAnimationFrame(update);
+}
+
+startBtn.addEventListener('click', () => {
+    overlay.style.display = 'none';
+    gameActive = true; score = 0; lixis = [];
+    update();
+});
+// ── Hamburger Menu ──
+const navToggle = document.getElementById('nav-toggle');
+const navLinks  = document.getElementById('nav-links');
+
+navToggle.addEventListener('click', () => {
+  navToggle.classList.toggle('active');
+  navLinks.classList.toggle('open');
+});
+
+// Đóng menu khi click vào link
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navToggle.classList.remove('active');
+    navLinks.classList.remove('open');
+  });
+});
+  </script>

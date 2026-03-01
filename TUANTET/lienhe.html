@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tết Gõ Cửa</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Be+Vietnam+Pro:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav>
+    <a href="#" class="nav-logo">Tết <span>Quê Hương</span> <br> Mai Khanh</a> 
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Trang Chủ</a></li>
+      <li><a href="cuatoi.html" >Phong Tục</a></li>
+      <li><a href="amthuc.html">Ẩm Thực</a></li>
+      <li><a href="vanhoa.html">Văn Hóa</a></li>
+         <li><a href="trochoi.html">Trò Chơi Hái Lộc</a></li>
+      <li><a href="lienhe.html">Liên Hệ</a></li>
+    </ul>
+    <a href="lienhe.html" class="nav-contact">Khám Phá</a>
+  </nav>
+
+  
+  <!-- ══ HERO ══ -->
+  <section class="lh-hero">
+    <div class="lh-hero__bg"></div>
+    <div class="lh-hero__lines">
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="lh-hero__content">
+      <p class="lh-hero__tag">✦ Kết Nối · Chia Sẻ · Lan Tỏa ✦</p>
+      <h1 class="lh-hero__title">
+        Nói Chuyện<br>
+        <em>Cùng Mai Khanh</em>
+      </h1>
+      <p class="lh-hero__desc">
+        Mai Khanh mún được lắng nghe câu chuyện của mọi ngườii ^^
+      </p>
+    </div>
+    <div class="lh-hero__deco">話</div>
+  </section>
+
+  <!-- ══ TICKER ══ -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-item">Gửi Lời Chúc</span>
+      <span class="ticker-item">Chia Sẻ Câu Chuyện</span>
+      <span class="ticker-item">Góp Ý Xây Dựng</span>
+      <span class="ticker-item">Kết Nối Yêu Thương</span>
+      <span class="ticker-item">Lan Tỏa Văn Hóa Tết</span>
+      <span class="ticker-item">Gửi Lời Chúc</span>
+      <span class="ticker-item">Chia Sẻ Câu Chuyện</span>
+      <span class="ticker-item">Góp Ý Xây Dựng</span>
+      <span class="ticker-item">Kết Nối Yêu Thương</span>
+      <span class="ticker-item">Lan Tỏa Văn Hóa Tết</span>
+    </div>
+  </div>
+
+  <!-- ══ MAIN CONTENT ══ -->
+  <section class="lh-main">
+
+    <!-- ── CỘT TRÁI: THÔNG TIN LIÊN HỆ ── -->
+    <div class="lh-info">
+
+      <div class="lh-info__header reveal">
+        <span class="lh-info__num">聯</span>
+        <div>
+          <p class="lh-info__tag">✦ Thông Tin Liên Hệ</p>
+          <h2 class="lh-info__heading">Tìm<br><em>Mai Khanh Ở Đây Neèe</em></h2>
+        </div>
+      </div>
+
+      <!-- Địa chỉ -->
+      <div class="lh-info__item reveal">
+        <div class="lh-info__icon">📍</div>
+        <div class="lh-info__detail">
+          <p class="lh-info__label">Địa Chỉ</p>
+          <p class="lh-info__value">140 Lê Trọng Tấn <br> Tân Phú, TP. Hồ Chí Minh</p>
+          <a href="https://maps.app.goo.gl/pkytqRWofi3WmZ4KA"
+             target="_blank" class="lh-info__link">
+            Xem trên Google Maps →
+          </a>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="lh-info__item reveal">
+        <div class="lh-info__icon">✉️</div>
+        <div class="lh-info__detail">
+          <p class="lh-info__label">Email</p>
+          <a href="mailto:maikhanhtran1907@gmail.com" class="lh-info__value lh-info__value--link">
+            maikhanhtran1907@gmail.com
+          </a>
+          <p class="lh-info__note">Phản hồi trong vòng 20 năm</p>
+        </div>
+      </div>
+
+      <!-- Facebook -->
+      <div class="lh-info__item reveal">
+        <div class="lh-info__icon lh-info__icon--fb">f</div>
+        <div class="lh-info__detail">
+          <p class="lh-info__label">Facebook</p>
+          <a href="https://www.facebook.com/share/1Gg6LHYtEf/?mibextid=wwXIfr"
+             target="_blank" class="lh-info__value lh-info__value--link">
+            fb.com/banhminuong
+          </a>
+          <p class="lh-info__note">Nhắn tin cho Bánh Mì Nướng</p>
+        </div>
+      </div>
+
+
+      <!-- Giờ phản hồi -->
+      <div class="lh-info__schedule reveal">
+        <p class="lh-info__tag" style="margin-bottom:16px">✦ Giờ Phản Hồi</p>
+        <div class="lh-info__schedule-row">
+          <span>Thứ 2 – Thứ 6</span>
+          <span class="lh-info__schedule-val">8:00 – 17:00</span>
+        </div>
+        <div class="lh-info__schedule-row">
+          <span>Thứ 7</span>
+          <span class="lh-info__schedule-val">9:00 – 12:00</span>
+        </div>
+        <div class="lh-info__schedule-row">
+          <span>Chủ Nhật</span>
+          <span class="lh-info__schedule-val lh-info__schedule-val--off">Nghỉ</span>
+        </div>
+      </div>
+
+    </div>
+ 
+
+    <!-- ── CỘT PHẢI: FORM ── -->
+    <div class="lh-form-wrap">
+
+      <div class="lh-form__header reveal">
+        <p class="lh-info__tag">✦ Gửi Lời Nhắn Đến Tớ</p>
+        <h2 class="lh-form__heading">Cậu Muốn<br><em>Chia Sẻ Điều Gì?</em></h2>
+      </div>
+
+      <form class="lh-form reveal" id="lh-form" novalidate>
+
+        <!-- Hàng 1: Họ tên + Email -->
+        <div class="lh-form__row">
+          <div class="lh-form__group">
+            <label class="lh-form__label" for="fullname">
+              Họ &amp; Tên <span class="lh-form__required">*</span>
+            </label>
+            <input
+              class="lh-form__input"
+              type="text" id="fullname" name="fullname"
+              placeholder="Người đẹp gái"
+              required
+            />
+            <span class="lh-form__error" id="err-fullname">Vui lòng nhập họ tên</span>
+          </div>
+          <div class="lh-form__group">
+            <label class="lh-form__label" for="email">
+              Email <span class="lh-form__required">*</span>
+            </label>
+            <input
+              class="lh-form__input"
+              type="email" id="email" name="email"
+              placeholder="maikhanhdepgailam@email.com"
+              required
+            />
+            <span class="lh-form__error" id="err-email">Email không hợp lệ</span>
+          </div>
+        </div>
+
+        <!-- Hàng 2: Số điện thoại + Tiêu đề -->
+        <div class="lh-form__row">
+          <div class="lh-form__group">
+            <label class="lh-form__label" for="phone">Số Điện Thoại</label>
+            <input
+              class="lh-form__input"
+              type="tel" id="phone" name="phone"
+              placeholder="0901 234 567"
+            />
+          </div>
+          <div class="lh-form__group">
+            <label class="lh-form__label" for="subject">
+              Tiêu Đề <span class="lh-form__required">*</span>
+            </label>
+            <input
+              class="lh-form__input"
+              type="text" id="subject" name="subject"
+              placeholder="Góp ý về trang web..."
+              required
+            />
+            <span class="lh-form__error" id="err-subject">Vui lòng nhập tiêu đề</span>
+          </div>
+        </div>
+
+        <!-- Loại tin nhắn -->
+        <div class="lh-form__group">
+          <label class="lh-form__label">Loại Tin Nhắn</label>
+          <div class="lh-form__chips">
+            <label class="lh-chip">
+              <input type="radio" name="type" value="gopy" checked />
+              <span>💬 Góp ý</span>
+            </label>
+            <label class="lh-chip">
+              <input type="radio" name="type" value="cachoi" />
+              <span>❓ Câu hỏi</span>
+            </label>
+            <label class="lh-chip">
+              <input type="radio" name="type" value="loinhan" />
+              <span>💌 Lời nhắn</span>
+            </label>
+            <label class="lh-chip">
+              <input type="radio" name="type" value="hoptac" />
+              <span>🤝 Hợp tác</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Nội dung -->
+        <div class="lh-form__group">
+          <label class="lh-form__label" for="message">
+            Nội Dung <span class="lh-form__required">*</span>
+          </label>
+          <textarea
+            class="lh-form__input lh-form__textarea"
+            id="message" name="message"
+            placeholder="Hãy chia sẻ suy nghĩ của cậu — câu chuyện Tết, góp ý cho trang web, hay bất cứ điều gì cậu muốn nói..."
+            required
+          ></textarea>
+          <div class="lh-form__counter">
+            <span id="char-count">0</span>/500 ký tự
+          </div>
+          <span class="lh-form__error" id="err-message">Vui lòng nhập nội dung</span>
+        </div>
+
+        <!-- Submit -->
+        <button class="lh-form__btn" type="submit" id="submit-btn">
+          <span class="lh-form__btn-text">Gửi Lời Nhắn</span>
+          <span class="lh-form__btn-icon">→</span>
+        </button>
+
+        <!-- Thông báo gửi thành công -->
+        <div class="lh-form__success" id="form-success">
+          <div class="lh-form__success-icon">✓</div>
+          <h3>Đã Gửi Thành Công!</h3>
+          <p>Cảm ơn cậu đã nhắn tin nhée. Tớ sẽ phản hồi trong thời gian sớm nhất.</p>
+        </div>
+
+      </form>
+    </div>
+
+  </section>
+
+ 
+  <!-- ══ GOOGLE MAP ══ -->
+  <section class="lh-map reveal">
+    <div class="lh-map__header">
+      <p class="lh-info__tag">✦ Vị Trí</p>
+      <h2 class="lh-map__heading">Tìm Mai Khanh<br><em>Trên Bản Đồ</em></h2>
+    </div>
+    <div class="lh-map__wrap">
+
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0572728099646!2d106.62625947533988!3d10.806925558629818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be27ea41e05%3A0xfa77697a39f13ab0!2zMTQwIEzDqiBUcuG7jW5nIFThuqVuLCBUw6J5IFRo4bqhbmgsIFTDom4gUGjDuiwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oIDcwMDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1772305369126!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        width="100%" height="100%"
+        style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Vị trí Google Maps">
+      </iframe>
+      <div class="lh-map__pin">
+        <div class="lh-map__pin-label">
+          <strong> Mai Khanh xinh đẹpppp</strong>
+          <span>Chúc ai đọc được đều hạnh phúc</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SOCIAL CTA ══ -->
+  <section class="lh-social reveal">
+    <p class="lh-social__tag">✦ Theo Dõi Tớ</p>
+    <h2 class="lh-social__heading">Cùng <em>Lan Tỏa</em><br>Văn Hóa Tết</h2>
+    <div class="lh-social__cards">
+
+      <a href="https://www.facebook.com/share/1Gg6LHYtEf/?mibextid=wwXIfr"
+         target="_blank" class="lh-social__card lh-social__card--fb">
+        <div class="lh-social__card-icon">f</div>
+        <div class="lh-social__card-info">
+          <strong>Facebook</strong>
+          <span>Nhắn tin &amp; cập nhật bài viết</span>
+        </div>
+        <span class="lh-social__card-arrow">→</span>
+      </a>
+
+      <a href="https://www.instagram.com/kshelo_?igsh=MXZ3azNrdTZidG5leQ%3D%3D&utm_source=qr"
+         target="_blank" class="lh-social__card lh-social__card--ig">
+        <div class="lh-social__card-icon">✦</div>
+        <div class="lh-social__card-info">
+          <strong>Instagram</strong>
+          <span>Ảnh &amp; khoảnh khắc Tết mỗi ngày</span>
+        </div>
+        <span class="lh-social__card-arrow">→</span>
+      </a>
+
+      <a href="mailto:maikhanhtran1907@gmail.com"
+         class="lh-social__card lh-social__card--email">
+        <div class="lh-social__card-icon">✉</div>
+        <div class="lh-social__card-info">
+          <strong>Email</strong>
+          <span>Liên hệ chi tiết &amp; hợp tác</span>
+        </div>
+        <span class="lh-social__card-arrow">→</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer id="contact">
+    <div>
+      <div class="footer-brand">Tết Quê Hương</div>
+      <p class="footer-tagline">Lưu giữ và tôn vinh những giá trị văn hóa truyền thống Việt Nam qua từng mùa Xuân.</p>
+    </div>
+    <div>
+      <p class="footer-col-title">Khám Phá</p>
+      <ul class="footer-links">
+        <li><a href="./index.html">Trang Chủ</a></li>
+        <li><a href="./cuatoi.html">Phong Tục</a></li>
+        <li><a href="./amthuc.html">Ẩm Thực</a></li>
+        <li><a href="./vanhoa.html">Văn Hóa</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Chủ Đề</p>
+      <ul class="footer-links">
+        <li><a href="vanhoa.html">Văn Hóa</a></li>
+        <li><a href="vanhoa.html">Nghệ Thuật</a></li>
+        <li><a href="amthuc.html">Ẩm Thực</a></li>
+        <li><a href="cuatoi.html">Du Lịch</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Liên Hệ</p>
+      <ul class="footer-links">
+        <li><a href="#">Email</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">YouTube</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Tết Quê Hương. Made with <span class="footer-heart">♥</span> by MAI KHANH</p>
+      <p class="footer-copy">Chúc Mừng Năm Mới · Bính Ngọ 2026</p>
+    </div>
+  </footer>
+      <!-- ══ JAVASCRIPT ══ -->
+  <script>
+    // Custom Cursor
+    const cursor = document.getElementById('cursor');
+    const ring   = document.getElementById('cursor-ring');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top  = e.clientY + 'px';
+      ring.style.left   = e.clientX + 'px';
+      ring.style.top    = e.clientY + 'px';
+    });
+    document.querySelectorAll('a, button, .card').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.style.width = '20px'; cursor.style.height = '20px';
+        cursor.style.background = 'var(--red)';
+        ring.style.width = '60px'; ring.style.height = '60px';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.style.width = '10px'; cursor.style.height = '10px';
+        cursor.style.background = 'var(--gold)';
+        ring.style.width = '36px'; ring.style.height = '36px';
+      });
+    });
+
+    // Particles
+    const container = document.getElementById('particles');
+    if (container){
+    for (let i = 0; i < 30; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      p.style.left              = Math.random() * 100 + '%';
+      p.style.width             = p.style.height = (Math.random() * 3 + 1) + 'px';
+      p.style.animationDuration = (Math.random() * 12 + 8) + 's';
+      p.style.animationDelay    = (Math.random() * 10) + 's';
+      p.style.background        = Math.random() > 0.5 ? 'var(--gold)' : 'var(--red-light)';
+      container.appendChild(p);
+    }
+    }
+    // Scroll Reveal
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+  document.querySelectorAll(
+  '.reveal, .reveal-left, .reveal-right, .img-reveal, .img-reveal-left, .img-reveal-right'
+).forEach(el => observer.observe(el));
+
+    // Navbar scroll effect
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 80) {
+        nav.style.background     = 'rgba(10,8,6,0.92)';
+        nav.style.backdropFilter = 'blur(12px)';
+        nav.style.borderBottom   = '1px solid rgba(212,175,55,0.1)';
+      } else {
+        nav.style.background     = 'transparent';
+        nav.style.backdropFilter = 'none';
+        nav.style.borderBottom   = 'none';
+      }
+    });
+
+    // Video fallback
+    const video    = document.querySelector('.hero-video');
+const fallback = document.querySelector('.hero-bg-fallback');
+if (video && fallback) {
+  video.addEventListener('canplay', () => { fallback.style.opacity = '0'; });
+  video.addEventListener('error',   () => { fallback.style.opacity = '1'; });
+}
+  // ── Parallax mượt với requestAnimationFrame ──
+let ticking = false;
+
+function updateParallax() {
+  document.querySelectorAll('.parallax-wrap').forEach(wrap => {
+    const img   = wrap.querySelector('.parallax-img');
+    if (!img) return;
+
+    const speed = parseFloat(img.dataset.speed) || 40;
+    const rect  = wrap.getBoundingClientRect();
+    const ratio = (rect.top + rect.height / 2 - window.innerHeight / 2)
+                  / window.innerHeight;
+
+    img.style.transform = `translateY(${ratio * speed}px)`;
+  });
+
+  ticking = false;
+}
+
+window.addEventListener('scroll', () => {
+  if (!ticking) {
+    requestAnimationFrame(updateParallax);
+    ticking = true;
+  }
+}, { passive: true });
+
+updateParallax();
+// Đếm ký tự
+const textarea  = document.getElementById('message');
+const charCount = document.getElementById('char-count');
+if (textarea && charCount) {
+  textarea.addEventListener('input', () => {
+    const len = Math.min(textarea.value.length, 500);
+    charCount.textContent = len;
+    if (textarea.value.length > 500) textarea.value = textarea.value.slice(0, 500);
+  });
+}
+
+// Validate & submit
+const form    = document.getElementById('lh-form');
+const success = document.getElementById('form-success');
+const btn     = document.getElementById('submit-btn');
+
+function showError(inputId, errId, show) {
+  const input = document.getElementById(inputId);
+  const err   = document.getElementById(errId);
+  if (!input || !err) return;
+  input.classList.toggle('lh-form__input--error', show);
+  err.classList.toggle('lh-form__error--show', show);
+}
+
+if (form) {
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    let valid = true;
+    const emailReg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    const checks = [
+      ['fullname', 'err-fullname', !document.getElementById('fullname').value.trim()],
+      ['email',    'err-email',    !emailReg.test(document.getElementById('email').value.trim())],
+      ['subject',  'err-subject',  !document.getElementById('subject').value.trim()],
+      ['message',  'err-message',  !document.getElementById('message').value.trim()],
+    ];
+
+    checks.forEach(([id, errId, invalid]) => {
+      showError(id, errId, invalid);
+      if (invalid) valid = false;
+    });
+
+    if (!valid) return;
+
+    btn.textContent = 'Đang gửi...';
+    btn.disabled = true;
+    btn.style.opacity = '0.6';
+
+    setTimeout(() => {
+      form.style.opacity = '0';
+      form.style.transform = 'translateY(-20px)';
+      setTimeout(() => {
+        form.style.display = 'none';
+        success.classList.add('lh-form__success--show');
+      }, 400);
+    }, 1200);
+  });
+
+  ['fullname','email','subject','message'].forEach(id => {
+    const errMap = { fullname:'err-fullname', email:'err-email', subject:'err-subject', message:'err-message' };
+    document.getElementById(id)?.addEventListener('input', () => showError(id, errMap[id], false));
+  });
+}
+// ── Hamburger Menu ──
+const navToggle = document.getElementById('nav-toggle');
+const navLinks  = document.getElementById('nav-links');
+
+navToggle.addEventListener('click', () => {
+  navToggle.classList.toggle('active');
+  navLinks.classList.toggle('open');
+});
+
+// Đóng menu khi click vào link
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navToggle.classList.remove('active');
+    navLinks.classList.remove('open');
+  });
+});
+  </script>

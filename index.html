@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mai Khanh — Learning Journey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Be+Vietnam+Pro:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+    --bg: #1a0808; /* Đỏ đậm sang trọng */
+    --gold: #D4AF37;
+    --cream: #f5f5f5;
+    --red: #aa3225;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--cream);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.portal-user-info {
+    margin-top: -20px; /* Thu hẹp khoảng cách với dòng kẻ gold */
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: var(--cream); /* */
+    opacity: 0.9;
+}
+
+.portal-user-info span {
+    display: block; /* Xuống dòng cho từng mục */
+    margin: 5px 0;
+}
+
+.portal-user-info strong {
+    color: var(--gold); /* Màu vàng đặc trưng của thương hiệu Deara */
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.portal-container {
+    max-width: 900px;
+    width: 90%;
+    text-align: center;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    border-radius: 20px;
+}
+
+.portal-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.portal-title em {
+    color: var(--gold);
+    font-style: italic;
+}
+
+.portal-line {
+    width: 60px;
+    height: 2px;
+    background: var(--gold);
+    margin: 0 auto 50px;
+}
+
+/* Lưới các ô link */
+.portal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.portal-card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    text-decoration: none;
+    color: var(--cream);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: all 0.4s ease;
+}
+
+.portal-card:hover {
+    background: rgba(212, 175, 55, 0.1);
+    border-color: var(--gold);
+    transform: translateY(-5px);
+}
+
+.week-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+.week-text {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+}
+
+.portal-card.special {
+    background: linear-gradient(145deg, var(--red), #6b1d16);
+    border: none;
+}
+
+.portal-card.special:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(170, 50, 37, 0.3);
+}
+#journey {
+    padding: 100px 5vw;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.portal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.portal-card {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    text-decoration: none;
+    color: var(--cream);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    border-radius: 12px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portal-card:hover {
+    background: rgba(212, 175, 55, 0.1);
+    border-color: var(--gold);
+    transform: translateY(-8px);
+}
+
+.portal-card.special {
+    background: linear-gradient(145deg, var(--red), #6b1d16); /* Màu đỏ Tết */
+}
+    </style>
+</head>
+<body>
+    <div id="particles"></div>
+
+    <div class="portal-container">
+        <header class="portal-header">
+            <p class="portal-tag">✦ 2026 Portfolio ✦</p>
+            <h1 class="portal-title">Ai dô đây là khẳng định <br><em>Mai Khanh thậc đẹp gái</em></h1>
+            <div class="portal-line"></div>
+
+            <div class="portal-user-info">
+        <span>Họ và tên: <strong>Trần Mai Khanh</strong></span>
+        <span>MSSV: <strong>20444230093</strong></span>
+    </div>
+        </header>
+
+        <div class="portal-grid">
+            <a href="./TUAN1/" class="portal-card">
+                <span class="week-num">01</span>
+                <span class="week-text">TUẦN THỨ 1</span>
+            </a>
+            <a href="./TUAN2/" class="portal-card">
+                <span class="week-num">02</span>
+                <span class="week-text">TUẦN THỨ 2</span>
+            </a>
+            <a href="./TUAN22/" class="portal-card">
+                <span class="week-num">22</span>
+                <span class="week-text">TUẦN THỨ 22</span>
+            </a>
+            <a href="./TUAN3/" class="portal-card">
+                <span class="week-num">03</span>
+                <span class="week-text">TUẦN THỨ 3</span>
+            </a>
+            <a href="./TUAN4/" class="portal-card">
+                <span class="week-num">04</span>
+                <span class="week-text">TUẦN THỨ 4</span>
+            </a>
+            <a href="./TUANTET/" class="portal-card special">
+                <span class="week-num">🧧</span>
+                <span class="week-text">TẾT LÀ TẾT</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

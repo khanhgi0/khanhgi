@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{background-color: lemonchiffon; width: 1000px; margin: auto;}
+        /* khoi menu */
+        #menu{background-color: darkred;height:1cm; }
+        #menu ul{list-style-type: none;}
+        #menu ul li{display: inline-block;width: 150px;font-weight: bold;font-style: italic; }
+        #menu ul li a{color: cornsilk;}
+        /* end menu */
+        #content ul{list-style-type: none;}
+        #content li.item a{color: darkred;}
+        #content li.item{
+            width: 250px;height: 200px;border: solid;
+            margin: 3px;
+            border-radius: 20px;
+            padding: 20px;
+            display: inline-block;
+
+        }
+        .item:hover{background-color: darkred;}
+    </style>
+</head>
+<body>
+    <!-- Khung <div>... hiển thị chung layout, 
+    + container: là khung để chứa toàn bộ nội dung
+    + menu: thanh ngang trên cùng để chọn nội dung
+    + content: khung nhỏ bên trong container và dưới menu, 
+    + có nhiều item (bấm vào có thể tới trang mới hoặc chi tiết)
+     * cách viết css: 
+    + Trong mỗi {} phải có ĐỊNH NGHĨA: màu sắc, kích cỡ, hiệu ứng,...
+    + #container {} (định nghĩa cho thẻ bên ngoài)
+    + #menu {} (định nghĩa hệ thống menu)
+    + #menu ul li {} (định nghĩa danh sách menu)
+    + #content {}
+    + li.item {} 
+    + a {}
+
+    * Chú ý cách gõ html:
+    - không cần gõ div, chỉ cần gõ: #nội dung trong div sẽ tự động hiện.
+    - cách gõ p: p#...
+    - gõ tắt: #container>#menu+#content
+    - trong menu: ul>li*số con>a>{menu $(đô la ở đây là 1-li)}
+    - trong content: ul>li.item*số cái>a>{phần tử thứ $}
+
+    + Viết CSS:
+    <style>
+        - thẻ a: a{color:...;} - cái này cho cả web
+
+        - khối container: #container{ background-color:...;
+        width: 1000px;
+        margin: auto;}
+
+        - khối menu: #menu{ background-color:...;}
+        ul trong khối menu: #menu ul{list-style-type: none;}
+        li trong khối menu: #menu ul li {display: inline-block; width: 100px; font-weight: bold;}
+        định nghĩa thẻ a cho khối menu: #menu ul li a{color:...;}
+
+        - khối content: 
+        ul trong khối content: #content ul{list-style-type: none;}
+        .item là class trong nó, chỉnh item: #content li.item {
+        width:...; height:...; border: solid;
+        margin:...;
+        border-radius:...;
+        padding:...;
+        display: inline-block;
+        }
+    </style> 
+    -->
+ <div id="container">
+    <div id="menu">
+    <!--ul>li*5>a>{Menu $}-->
+    <ul>
+        <li><a href="">Menu 1</a></li>
+        <li><a href="">Menu 2</a></li>
+        <li><a href="">Menu 3</a></li>
+        <li><a href="">Menu 4</a></li>
+        <li><a href="">Menu 5</a></li>
+    </ul>
+    </div>
+    <div id="content">
+        <!-- ul>li.item*10>a>{Dia diem $} -->
+         <ul>
+            <li class="item"><a href="">Dia diem 1</a></li>
+            <li class="item"><a href="">Dia diem 2</a></li>
+            <li class="item"><a href="">Dia diem 3</a></li>
+            <li class="item"><a href="">Dia diem 4</a></li>
+            <li class="item"><a href="">Dia diem 5</a></li>
+            <li class="item"><a href="">Dia diem 6</a></li>
+            <li class="item"><a href="">Dia diem 7</a></li>
+            <li class="item"><a href="">Dia diem 8</a></li>
+            <li class="item"><a href="">Dia diem 9</a></li>
+            <li class="item"><a href="">Dia diem 10</a></li>
+         </ul>
+    </div>
+ </div>
+</body>
+</html>

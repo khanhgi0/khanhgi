@@ -1,0 +1,52 @@
+*{box-sizing: border-box;}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.menu-link { margin-left: 20px; font-weight: 500; font-size: 15px; color: #333; }
+.menu-link:hover { color: #003087; }
+.search-input { width: 100%; border: none; outline: none; padding: 10px; font-size: 15px; }
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-section{
+    position: relative;
+    background: url('https://vi.pngtree.com/freebackground/gradient-blue-green-background-color_648470.html');
+    background-size: cover;
+    background-position: center;
+}
+.hero-overlay {
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+}
+.hero-content{
+    position: relative;
+    z-index: 2;
+    color: azure;
+    width: 100%;
+}
+.hero-tittle{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+.stats-bar{
+    background: linear-gradient(90deg,#00d2ff 0%, #3a7bd5 100%);
+}
+.text-overlay {
+    position: absolute; /* Đặt vị trí tuyệt đối so với .container */
+    bottom: 20px; /* Cách mép dưới 20px */
+    left: 20px; /* Cách mép trái 20px */
+    color: white; /* Màu chữ */
+    background-color: rgba(0, 0, 0, 0.5); /* Nền mờ để chữ dễ đọc */
+    padding: 10px;
+}

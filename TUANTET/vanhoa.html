@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tết Gõ Cửa</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Be+Vietnam+Pro:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav>
+    <a href="#" class="nav-logo">Tết <span>Quê Hương</span> <br> Mai Khanh</a> 
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Trang Chủ</a></li>
+      <li><a href="cuatoi.html" >Phong Tục</a></li>
+      <li><a href="amthuc.html">Ẩm Thực</a></li>
+      <li><a href="vanhoa.html">Văn Hóa</a></li>
+         <li><a href="trochoi.html">Trò Chơi Hái Lộc</a></li>
+      <li><a href="lienhe.html">Liên Hệ</a></li>
+    </ul>
+    <a href="lienhe.html" class="nav-contact">Khám Phá</a>
+  </nav>
+
+  
+  <!-- ══ HERO ══ -->
+  <section class="vh-hero">
+    <div id="particles" class="particles"></div>
+    <!-- Chữ Hán nền -->
+    <div class="vh-hero__chars">
+      <span>文</span><span>化</span><span>春</span><span>節</span>
+    </div>
+    <div class="vh-hero__content">
+      <div class="vh-hero__tag">✦ Di Sản · Bản Sắc · Tự Hào ✦</div>
+      <h1 class="vh-hero__title">
+        Văn Hóa
+        <br><em>Tết Việt</em>
+      </h1>
+      <div class="vh-hero__subtitle-row">
+        <div class="vh-hero__line"></div>
+        <p class="vh-hero__subtitle">Bản sắc ngàn năm trong từng sắc đỏ mùa Xuân</p>
+      </div>
+    </div>
+    <!-- Số đếm động -->
+    <div class="vh-hero__stats">
+      <div class="vh-hero__stat">
+        <strong>4000+</strong>
+        <span>năm lịch sử</span>
+      </div>
+      <div class="vh-hero__stat">
+        <strong>54</strong>
+        <span>dân tộc anh em</span>
+      </div>
+      <div class="vh-hero__stat">
+        <strong>1</strong>
+        <span>mùa Xuân</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ OPENING STATEMENT ══ -->
+  <section class="vh-statement reveal">
+    <div class="vh-statement__left">
+      <span class="vh-statement__big">春</span>
+    </div>
+    <div class="vh-statement__right">
+      <p class="vh-statement__quote">
+        "Tết không chỉ là ngày — Tết là cả một nền văn minh"
+      </p>
+      <p class="vh-statement__body">
+        Trong hàng ngàn năm, người Việt đã dệt nên một nền văn hóa Tết độc đáo — nơi màu đỏ của may mắn, tiếng nhạc của lân sư, hương thơm của hoa mai, và nụ cười của trẻ thơ hòa quyện thành một bản nhạc mùa Xuân không bao giờ lỗi thời.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       BENTO GRID — SECTION 1: HOA XUÂN
+  ══════════════════════════════════════════ -->
+  <section class="vh-section">
+    <div class="vh-section__header reveal">
+      <span class="vh-section__num">01</span>
+      <h2 class="vh-section__title">Hoa <em>Mùa Xuân</em></h2>
+      <p class="vh-section__desc">Sắc vàng của mai, sắc hồng của đào — linh hồn của Tết Việt</p>
+    </div>
+
+    <div class="vh-bento">
+      <!-- Card lớn — ảnh -->
+      <div class="vh-bento__item vh-bento__item--large reveal">
+        <div class="vh-bento__img-wrap">
+          <!--
+            <img src="images/hoa-mai.jpg" alt="Hoa Mai" />
+          -->
+          <img src="./img/5.jpg" alt="hoa mai">
+          <div class="vh-bento__img-overlay"></div>
+        </div>
+        <div class="vh-bento__caption">
+          <span class="vh-bento__cap-tag">Miền Nam</span>
+          <h3>Hoa Mai Vàng</h3>
+          <p>Mỗi cánh hoa mai nở là một điềm lành. Người miền Nam trồng mai từ tháng 8, tỉa lá tháng 11 để hoa nở đúng dịp Tết — đây là cả một nghệ thuật của sự kiên nhẫn.</p>
+        </div>
+      </div>
+
+      <!-- Card nhỏ — text đặc biệt -->
+      <div class="vh-bento__item vh-bento__item--text reveal" style="transition-delay:.1s">
+        <div class="vh-bento__text-inner">
+          <span class="vh-bento__text-num">5</span>
+          <p class="vh-bento__text-label">cánh hoa mai<br>= ngũ phúc</p>
+          <div class="vh-bento__text-note">Phúc · Lộc · Thọ · Khang · Ninh</div>
+        </div>
+      </div>
+
+      <!-- Card nhỏ — ảnh -->
+      <div class="vh-bento__item vh-bento__item--small reveal" style="transition-delay:.15s">
+        <div class="vh-bento__img-wrap">
+          <img src="./img/caydao.jpg" alt="cây đào">
+          <div class="vh-bento__img-overlay"></div>
+          <div class="vh-bento__small-caption">Hoa Đào · Miền Bắc</div>
+        </div>
+      </div>
+
+      <!-- Card nhỏ — ảnh -->
+      <div class="vh-bento__item vh-bento__item--small reveal" style="transition-delay:.2s">
+        <div class="vh-bento__img-wrap">
+         <img src="./img/chohoa.jpg" alt="">
+          <div class="vh-bento__img-overlay"></div>
+          <div class="vh-bento__small-caption">Chợ Hoa Xuân</div>
+        </div>
+      </div>
+
+      <!-- Card wide — video -->
+      <div class="vh-bento__item vh-bento__item--wide reveal" style="transition-delay:.25s">
+        <div class="vh-bento__video-wrap">
+          <div class="vh-bento__video-badge">▶ Video</div>
+          <!--
+            <video controls poster="images/cho-hoa.jpg">
+              <source src="video/cho-hoa-xuan.mp4" type="video/mp4" />
+            </video>
+          -->
+          <video controls poster="./img/chog.jpg">
+              <source src="./video/moi.mp4" type="video/mp4" />
+            </video>
+        </div>
+        <div class="vh-bento__wide-text">
+          <h3>Chợ Hoa Xuân</h3>
+          <p>Chợ hoa ngày Tết mở từ 23 tháng Chạp, nhộn nhịp nhất vào đêm 30. Mỗi gia đình chọn cho mình một cành mai, chậu cúc — lựa chọn đó là cả một nghi thức chào đón mùa Xuân.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="divider reveal">
+    <div class="divider-line"></div>
+    <div class="divider-text">✦ Sắc Màu & Âm Thanh Tết ✦</div>
+    <div class="divider-line"></div>
+  </div>
+<!-- ══════════════════════════════════════════
+       SECTION 2: LÂN SƯ RỒNG — ASYMMETRIC LAYOUT
+  ══════════════════════════════════════════ -->
+  <section class="vh-section vh-section--dark">
+    <div class="vh-section__header reveal">
+      <span class="vh-section__num">02</span>
+      <h2 class="vh-section__title">Lân Sư <em>Rồng</em></h2>
+      <p class="vh-section__desc">Điệu múa ngàn năm xua đuổi tà ma, đón tài lộc vào nhà</p>
+    </div>
+
+    <div class="vh-asym">
+      <div class="vh-asym__main reveal-left">
+        <div class="vh-asym__img">
+          <img src="./img/lanrong.jpg" alt="múa lân">
+          <div class="vh-asym__img-overlay"></div>
+          <div class="vh-asym__img-label">Múa Lân Mùng 1</div>
+        </div>
+      </div>
+      <div class="vh-asym__side">
+        <div class="vh-asym__card reveal-right">
+          <span class="vh-asym__card-num">I</span>
+          <h3>Tiếng Trống Khai Xuân</h3>
+          <p>Tiếng trống lân rộn rã là hiệu lệnh của mùa Xuân. Nhịp trống tùng tùng tùng không chỉ xua đuổi ma quỷ mà còn đánh thức tài lộc, kéo may mắn ùa vào từng ngôi nhà.</p>
+        </div>
+        <div class="vh-asym__card reveal-right" style="transition-delay:.15s">
+          <span class="vh-asym__card-num">II</span>
+          <h3>Nghệ Thuật Múa Lân</h3>
+          <p>Đội lân gồm 10–20 người, tập luyện cả năm để có thể biểu diễn những màn leo cột, hái lộc ngoạn mục. Đầu lân nặng 15–20kg, đòi hỏi người đội phải có sức mạnh và kỹ thuật phi thường.</p>
+        </div>
+        <div class="vh-asym__card reveal-right" style="transition-delay:.3s">
+          <span class="vh-asym__card-num">III</span>
+          <h3>Ý Nghĩa Tâm Linh</h3>
+          <p>Lân tượng trưng cho sự may mắn và thịnh vượng. Sau khi múa, chủ nhà mời đội lân vào nhà — đây là nghi thức "khai lộc" cho năm mới, xua đi vận rủi năm cũ.</p>
+        </div>
+      </div>
+    </div> <!-- Video lân -->
+    <div class="vh-video-full reveal">
+      <div class="vh-video-full__wrap">
+        <video controls poster="./img/mualna.jpg">
+            <source src="./video/mua.mp4" type="video/mp4" />
+          </video>
+        <div class="vh-video-full__caption">
+          <p class="vh-video-full__tag">✦ Video Kỷ Niệm</p>
+          <h3>Đêm Múa Lân<br><em>Đón Xuân</em></h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- ══════════════════════════════════════════
+       SECTION 3: ÁO DÀI & CÂU ĐỐI — GRID CHAOS
+  ══════════════════════════════════════════ -->
+  <section class="vh-section">
+    <div class="vh-section__header reveal">
+      <span class="vh-section__num">03</span>
+      <h2 class="vh-section__title">Áo Dài &amp; <em>Câu Đối</em></h2>
+      <p class="vh-section__desc">Vẻ đẹp truyền thống ngàn đời của người Việt ngày Xuân</p>
+    </div>
+
+    <div class="vh-collage">
+      <div class="vh-collage__item vh-collage__item--1 reveal">
+        <div class="vh-bento__img-wrap" style="height:100%">
+         <img src="./img/aodai.jpg" alt="áo dài">
+          <div class="vh-bento__img-overlay"></div>
+        </div>
+        <div class="vh-collage__label">
+          <span>Áo Dài Tết</span>
+        </div>
+      </div>
+
+      <div class="vh-collage__item vh-collage__item--2 reveal" style="transition-delay:.1s">
+        <div class="vh-collage__text-block">
+          <h3>Áo Dài —<br><em>Quốc Phục</em></h3>
+          <p>Ngày Tết, cả gia đình diện áo dài mới — đi chúc Tết họ hàng. Tiếng xào xạc của tà áo dài là âm thanh của Xuân, của niềm vui, của tự hào dân tộc.</p>
+        </div>
+      </div>
+
+      <div class="vh-collage__item vh-collage__item--3 reveal" style="transition-delay:.15s">
+        <div class="vh-bento__img-wrap" style="height:100%">
+          <img src="./img/den.jpg" alt="đèn lồng">
+          <div class="vh-bento__img-overlay"></div>
+        </div>
+        <div class="vh-collage__label">
+          <span>Đèn Lồng Đỏ</span>
+        </div>
+      </div>
+
+      <div class="vh-collage__item vh-collage__item--4 reveal" style="transition-delay:.2s">
+        <div class="vh-collage__quote-block">
+          <span class="vh-collage__quote-mark">"</span>
+          <p>Mỗi câu đối đỏ trên cửa nhà là một lời cầu nguyện gửi đến trời đất</p>
+        </div>
+      </div>
+
+      <div class="vh-collage__item vh-collage__item--5 reveal" style="transition-delay:.25s">
+        <div class="vh-bento__img-wrap" style="height:100%">
+          <img src="./img/cdoi.jpg" alt="câu đối">
+          <div class="vh-bento__img-overlay"></div>
+        </div>
+        <div class="vh-collage__label">
+          <span>Câu Đối Đỏ</span>
+        </div>
+      </div>
+
+      <div class="vh-collage__item vh-collage__item--6 reveal" style="transition-delay:.3s">
+        <div class="vh-collage__text-block vh-collage__text-block--dark">
+          <h3>Câu Đối —<br><em>Chữ Nghĩa May Mắn</em></h3>
+          <p>Treo câu đối đỏ hai bên cửa là phong tục có từ ngàn năm. Mỗi đôi câu đối là một ước nguyện — khắc trên giấy đỏ, viết bằng mực vàng, gửi vào gió xuân.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PULL QUOTE -->
+  <div class="pull-quote reveal">
+    <p class="pull-quote-text">
+      Màu đỏ của Tết không phải chỉ là màu sắc đơn thuần<br>
+      đó là <em>ngôn ngữ của tình yêu</em> người Việt
+    </p>
+    <p class="pull-quote-author">Văn hóa Tết Việt Nam</p>
+  </div>
+  <!-- ══ FOOTER ══ -->
+  <footer id="contact">
+    <div>
+      <div class="footer-brand">Tết Quê Hương</div>
+      <p class="footer-tagline">Lưu giữ và tôn vinh những giá trị văn hóa truyền thống Việt Nam qua từng mùa Xuân.</p>
+    </div>
+    <div>
+      <p class="footer-col-title">Khám Phá</p>
+      <ul class="footer-links">
+        <li><a href="./index.html">Trang Chủ</a></li>
+        <li><a href="./cuatoi.html">Phong Tục</a></li>
+        <li><a href="./amthuc.html">Ẩm Thực</a></li>
+        <li><a href="./vanhoa.html">Văn Hóa</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Chủ Đề</p>
+      <ul class="footer-links">
+        <li><a href="vanhoa.html">Văn Hóa</a></li>
+        <li><a href="vanhoa.html">Nghệ Thuật</a></li>
+        <li><a href="amthuc.html">Ẩm Thực</a></li>
+        <li><a href="cuatoi.html">Du Lịch</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Liên Hệ</p>
+      <ul class="footer-links">
+        <li><a href="lienhe.html">Email</a></li>
+        <li><a href="lienhe.html">Facebook</a></li>
+        <li><a href="lienhe.html">Instagram</a></li>
+        <li><a href="lienhe.html">YouTube</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Tết Quê Hương. Made with <span class="footer-heart">♥</span> by MAI KHANH</p>
+      <p class="footer-copy">Chúc Mừng Năm Mới · Bính Ngọ 2026</p>
+    </div>
+  </footer>
+      <!-- ══ JAVASCRIPT ══ -->
+  <script>
+    // Custom Cursor
+    const cursor = document.getElementById('cursor');
+    const ring   = document.getElementById('cursor-ring');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top  = e.clientY + 'px';
+      ring.style.left   = e.clientX + 'px';
+      ring.style.top    = e.clientY + 'px';
+    });
+    document.querySelectorAll('a, button, .card').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.style.width = '20px'; cursor.style.height = '20px';
+        cursor.style.background = 'var(--red)';
+        ring.style.width = '60px'; ring.style.height = '60px';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.style.width = '10px'; cursor.style.height = '10px';
+        cursor.style.background = 'var(--gold)';
+        ring.style.width = '36px'; ring.style.height = '36px';
+      });
+    });
+
+    // Particles
+    const container = document.getElementById('particles');
+    for (let i = 0; i < 30; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      p.style.left              = Math.random() * 100 + '%';
+      p.style.width             = p.style.height = (Math.random() * 3 + 1) + 'px';
+      p.style.animationDuration = (Math.random() * 12 + 8) + 's';
+      p.style.animationDelay    = (Math.random() * 10) + 's';
+      p.style.background        = Math.random() > 0.5 ? 'var(--gold)' : 'var(--red-light)';
+      container.appendChild(p);
+    }
+
+    // Scroll Reveal
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+  document.querySelectorAll(
+  '.reveal, .reveal-left, .reveal-right, .img-reveal, .img-reveal-left, .img-reveal-right'
+).forEach(el => observer.observe(el));
+
+    // Navbar scroll effect
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 80) {
+        nav.style.background     = 'rgba(10,8,6,0.92)';
+        nav.style.backdropFilter = 'blur(12px)';
+        nav.style.borderBottom   = '1px solid rgba(212,175,55,0.1)';
+      } else {
+        nav.style.background     = 'transparent';
+        nav.style.backdropFilter = 'none';
+        nav.style.borderBottom   = 'none';
+      }
+    });
+
+    // Video fallback
+    const video    = document.querySelector('.hero-video');
+const fallback = document.querySelector('.hero-bg-fallback');
+if (video && fallback) {
+  video.addEventListener('canplay', () => { fallback.style.opacity = '0'; });
+  video.addEventListener('error',   () => { fallback.style.opacity = '1'; });
+}
+  // ── Parallax mượt với requestAnimationFrame ──
+let ticking = false;
+
+function updateParallax() {
+  document.querySelectorAll('.parallax-wrap').forEach(wrap => {
+    const img   = wrap.querySelector('.parallax-img');
+    if (!img) return;
+
+    const speed = parseFloat(img.dataset.speed) || 40;
+    const rect  = wrap.getBoundingClientRect();
+    const ratio = (rect.top + rect.height / 2 - window.innerHeight / 2)
+                  / window.innerHeight;
+
+    img.style.transform = `translateY(${ratio * speed}px)`;
+  });
+
+  ticking = false;
+}
+
+window.addEventListener('scroll', () => {
+  if (!ticking) {
+    requestAnimationFrame(updateParallax);
+    ticking = true;
+  }
+}, { passive: true });
+
+updateParallax();
+// ── Hamburger Menu ──
+const navToggle = document.getElementById('nav-toggle');
+const navLinks  = document.getElementById('nav-links');
+
+navToggle.addEventListener('click', () => {
+  navToggle.classList.toggle('active');
+  navLinks.classList.toggle('open');
+});
+
+// Đóng menu khi click vào link
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navToggle.classList.remove('active');
+    navLinks.classList.remove('open');
+  });
+});
+  </script>
