@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Menu cơ bản</title>
+    <style>
+        .box {
+    width: 600px;
+    margin: auto;
+}
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background: blue;
+            width: 600px;
+        }
+
+        .menu li {
+            float: left;
+            width: 100px;
+            text-align: center;
+            border-right: 1px solid white;
+            position: relative;
+        }
+
+        .menu li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 15px;
+            background: blue;
+        }
+
+        .menu li a:hover {
+            background: oldlace;
+            color: black;
+        }
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 200px;
+        }
+
+        .submenu li {
+            width: 200px;
+            border-bottom: 1px solid white;
+        }
+
+        .menu li:hover .submenu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <ul class="menu">
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Diễn đàn</a></li>
+        <li>
+            <a href="#">Tin tức</a>
+            <ul class="submenu">
+                <li><a href="#">Học vụ</a></li>
+                <li><a href="#">Đoàn thể</a></li>
+                <li><a href="#">Câu lạc bộ - Học thuật</a></li>
+                <li><a href="#">Điểm rèn luyện</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Hỏi đáp</a></li>
+        <li><a href="#">Liên hệ</a></li>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+body {
+  font-family: 'Times New Roman', serif;
+  padding: 40px;
+  background-color: white;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tieu-de-bai {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== BOX 1 ===== */
+.box1 {
+  border: 2px solid #3333cc;
+  background-color: #fffce0;
+  padding: 25px 40px;
+  margin-bottom: 35px;
+  border-radius: 6px;
+}
+
+.tieu-de-box1 {
+  text-align: center;
+  color: #cc0000;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.noi-dung-box1 {
+  text-align: justify;
+  font-size: 17px;
+  color: black;
+  font-style: italic;
+  line-height: 1.8;
+  margin: 0 20px;
+}
+
+/* ===== BOX 2 ===== */
+.box2 {
+  width: 460px;
+  margin: 0 auto;
+  border: 2px solid #666;
+  background-color: #1a1a1a;
+  background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(./img/tuyen-tap-101-hinh-anh-cha-va-con-gai-y-nghia-dep-cam-dong_15.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 22px 28px;
+  border-radius: 5px;
+}
+
+.tieu-de-box2 {
+  text-align: center;
+  color: #c8e600;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  text-shadow: 1px 1px 4px black;
+  margin-bottom: 14px;
+  letter-spacing: 1px;
+}
+
+.noi-dung-box2 {
+  text-align: justify;
+  font-size: 16px;
+  color: white;
+  font-style: italic;
+  line-height: 1.8;
+  text-shadow: 1px 1px 3px black;
+  margin: 0;
+}
+

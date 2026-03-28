@@ -1,0 +1,76 @@
+#main-menu {
+    display: flex;
+    background-color: blue;
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    width: fit-content;
+}
+
+#main-menu > li {
+    position: relative;
+    border-right: 1px solid #FFF;
+}
+
+#main-menu > li:last-child {
+    border-right: none;
+}
+
+#main-menu a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+#main-menu a:hover {
+    background-color: oldlace;
+    color: #000;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: blue;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 100%;
+    width: max-content;
+    z-index: 100;
+}
+
+.dropdown li {
+    border-bottom: 1px solid #FFF;
+    position: relative;
+}
+.side-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: blue;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: max-content;
+    border-left: 1px solid #FFF;
+}
+
+.side-menu li {
+    border-bottom: 1px solid #FFF;
+}
+#main-menu li:hover > .dropdown,
+.dropdown li:hover > .side-menu {
+    display: block;
+}
+
+#main-menu .dropdown li:last-child,
+#main-menu .side-menu li:last-child {
+    border-bottom: none;
+}
