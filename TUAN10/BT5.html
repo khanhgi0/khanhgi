@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.min.js"></script>
+    <style>
+        [class *="col"]{
+            padding: 5px;
+            background-color: darkkhaki;
+            border: 2px solid #fff;
+            color: #fff;
+            text-align: center;
+        }
+        .responsive{
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h3 align="center">Container Width changed</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">Main Content</div>
+            <div class="col-md-3">Sidebar</div>
+        </div>
+    <h3 align="center">A column much taller than the rest</h3>
+  
+        <div class="row">
+            <div class="col-sm">
+                 <p>A column much taller than the rest</p>
+                <p>A column much taller than the rest</p>
+            <p>A column much taller than the rest</p></div>
+            <div class="col-md-6">a1</div>
+        </div>
+        <div class="row">
+            <div class="col-sm">a2</div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
