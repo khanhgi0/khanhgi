@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #clock{color: skyblue;font-size: 50px;text-align: center;}
+        body{
+            text-align: center;
+            font-size: 30px;
+            color: lawngreen;
+        }
+    </style>
+    <script>
+        function F(){
+            let d = new Date();
+            let ng = d.getDate(); let th = d.getMonth()+1; let nam=d.getFullYear();
+            let gio=d.getHours(); let ph = d.getMinutes(); let giay =d.getSeconds();
+           // let s = ng+ '/' +th+'/'+nam+' '+gio+':' + ph + ':' + giay
+           let = s=`${ng}/${th}/${nam} ${gio}:${ph}:${giay}`
+           document.getElementById('clock').innerHTML=s
+            setTimeout(F,1000)
+        }   
+    </script>
+</head>
+<body >
+ <input  type="button" value="BẤM DÔ MAUUUUU!!!!!!!????????" onclick="F()">
+    <div id="clock"></div>
+</body>
+</html>

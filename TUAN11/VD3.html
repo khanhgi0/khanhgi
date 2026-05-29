@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{height: 300px;}
+    </style>
+    <script>
+        function F1(){
+            let t1=document.getElementById('id1')
+            let t2=t1.innerHTML
+            let t3=t1.innerText
+            console.log(t2, t3)
+            t1.querySelector('img').src='img/4.webp'
+        }
+         function F2(){
+let t1=document.querySelector('#id1')
+t1.innerHTML += t1.innerHTML
+         }
+    </script>
+</head>
+<body>
+    <input type="button" value="DOM" onclick="F1()">
+    <input type="button" value="DOM2" onclick="F2()">
+    <div id="id1">
+        <img src="./img/vn-11134258-81ztc-moi0meghm2o9a9.png" alt="">
+        <img src="./img/dvh.jpg" alt="">
+        <p>text</p>
+    </div>
+    <img src="./img/huz.jpg" alt="">
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #banner{background-image: url(./img/cauvong.jpg);background-size: cover;height: 500px;height: 1000;
+        font-size: 50px; font-weight: bold;color: lightgoldenrodyellow;text-align: center;}
+    </style>
+    <script>
+        var a=['img/LUA.jpg','img/khi.jpg','img/xanh.jpg','img/thay.gif']
+        var curr=0
+
+        function F(){
+            document.querySelector('#banner').style.backgroundImage=`url(${a[curr]})`
+            curr++;curr=curr%a.length;
+            setTimeout(F,2000)
+        }
+    </script>
+</head>
+<body onload="F()">
+    <div id="banner">ĐừNg BAo giỜ KHInh ThƯỜng 
+        <p>A HAHAH AH HA HA HA A</p> </div>
+</body>
+</html>

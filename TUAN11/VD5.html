@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function F1(){
+            let frm1=document.forms[0];
+            //let frm1=document.f1;
+            // let frm1=document.forms['f1'];
+            let a= frm1.a.value;
+            console.log(a)
+            let agt=frm1.gt; //array
+            if ( agt[0].checked)
+            a='chao chao anh:'+a;
+        if(agt[1].checked)
+        a='chao chao chi gai:'+a;
+
+        document.querySelector('#ketqua').innerHTML=a
+        }
+
+            function F2(){
+                let frm1=document.f2;
+            //let frm1=document.forms[0];
+            //let frm1=document.f1;
+            // let frm1=document.forms['f1'];
+            let a= frm1.a.value;
+            console.log(a)
+            let agt=frm1.gt; //array
+            if ( agt[0].checked)
+            a='chao chao anh:'+a;
+        if(agt[1].checked)
+        a='chao chao chi gai:'+a;
+
+        document.querySelector('#ketqua2').innerHTML=a
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="f1">
+        <input type="text" name="a" id=""> <br>
+        <input type="radio" name="gt" value="1"> Nam 
+        <input type="radio" name="gt" value="0"> Nu
+        <input type="button" value="Test" onclick="F1()"> 
+
+    </form>
+    <div id="ketqua"></div>
+
+        <form action="" name="f2">
+        <input type="text" name="a" id=""> <br>
+        <input type="radio" name="gt" value="1"> Nam 
+        <input type="radio" name="gt" value="0"> Nu
+        <input type="button" value="Test" onclick="F2()"> 
+
+    </form>
+    <div id="ketqua2"></div>
+</body>
+</html>
