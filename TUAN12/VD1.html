@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function F1(){
+            //LAY data tu form
+            //ten : toi thieu 3kitu,khoang trang
+            //gtinh chon 1
+            let f1=document.forms[0];
+            let f2=document.forms['frm1']
+            let ten1=f1.u.value;
+            let ten2=document.querySelector('#idu').value;
+            console.log(ten1,ten2)
+            if(ten1.trim().indexOf(' ')!=-1){
+                //ko hop le
+                document.querySelector('#id1').innerHTML='user ko hop le'
+                return;
+            }
+            //chon 1 gioitinh
+            let gts=f1.gt;
+            if(gts[0].checked)document.querySelector('#id1').innerHTML="Gioi tinh nam"
+             if(gts[1].checked)document.querySelector('#id1').innerHTML="Gioi tinh nu"
+        }
+    </script>
+</head>
+<body>
+    <form name="frm1">
+        Ten dang nhap <input type="text" name="u" id="idu"> <br>
+        Gioi tinh <input type="radio" name="gt" id="gt1" value="nam">Nam
+        <input type="radio" name="gt" id="gt2" value="nu">Nữ <br>
+        <input type="button" value="check" onclick="F1()">
+    </form>
+    <div id="id1">Gioi tinh dì đây</div>
+</body>
+</html>
