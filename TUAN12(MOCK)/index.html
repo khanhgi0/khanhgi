@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Dự Án Của Nàng</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffe5ec 0%, #ffc2d1 100%);
+            color: #4a4a4a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 35px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(255, 182, 193, 0.4);
+            width: 100%;
+            max-width: 400px;
+            backdrop-filter: blur(5px);
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            text-align: center;
+            color: #ff5c8a;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            position: relative;
+        }
+
+        /* Dấu gạch chân trang trí hình tim nhỏ */
+        h1::after {
+            content: "🌸";
+            display: block;
+            font-size: 1rem;
+            margin-top: 5px;
+        }
+
+        .menu-list {
+            list-style: none;
+        }
+
+        .menu-item {
+            margin-bottom: 15px;
+        }
+
+        .menu-item a {
+            display: flex;
+            align-items: center;
+            padding: 14px 20px;
+            background-color: #ffffff;
+            color: #6c757d;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid #ffe3e8;
+        }
+
+        /* Thay đổi icon </> thành icon trái tim hồng */
+        .menu-item a::before {
+            content: "💗";
+            margin-right: 12px;
+            font-size: 0.9rem;
+            transition: transform 0.3s ease;
+        }
+
+        /* Hiệu ứng ngọt ngào khi rê chuột vào */
+        .menu-item a:hover {
+            background-color: #ffb3c6;
+            color: #ffffff;
+            border-color: #ffb3c6;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255, 143, 171, 0.3);
+        }
+
+        .menu-item a:hover::before {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Góc Sản Phẩm Của MaiKa</h1>
+        <ul class="menu-list">
+            <li class="menu-item"><a href="filter.html">filter.html</a></li>
+            <li class="menu-item"><a href="json.html">json.html</a></li>
+            <li class="menu-item"><a href="mockapi.html">mockapi.html</a></li>
+            <li class="menu-item"><a href="namnu.html">namnu.html</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

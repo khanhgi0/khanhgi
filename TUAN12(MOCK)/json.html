@@ -1,0 +1,12 @@
+    <!-- json-object -->
+<script>
+    let o1 = { x: 10, y: 'abc' };
+    console.log(o1.x, o1.y);
+
+    let s1 = '{"x":10, "y":"abc"}'; // JSON
+
+    let o2 = JSON.parse(s1);
+    let s2 = JSON.stringify(o1);
+
+    console.log(o1, o2, s1, s2);
+</script>

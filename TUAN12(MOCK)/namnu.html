@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function F1(){
+            //lay data tu form/kiem tra
+            //tendn: toi thieu 3 ki tu, khong khoang trang
+            //gioi tinh: phai chon 1
+
+            let f1 = document.forms[0];
+            let f2 = document.forms['frm1'];
+
+            let tdn1 = f1.u.value;
+            let tdn2 = document.querySelector('#idu').value;
+
+            console.log(tdn1, tdn2)
+
+            if (tdn1.trim().indexOf(' ') != -1){
+                // kg hop le
+                document.querySelector('#id1').innerHTML = 'user kg hop le'
+                return;
+            }
+
+            //bat buoc chon 1 gioi tinh
+            // let gts = f1.gt; //1 mang
+            // if (gts[0].checked)
+            //     document.querySelector('#id1').innerHTML='GT nam'
+            // if (gts[1].checked)
+            //     document.querySelector('#id1').innerHTML='GT nu'
+
+            if (document.querySelector('#gt1').checked)
+                document.querySelector('#id1').innerHTML = 'GT nam'
+
+            if (document.querySelector('#gt2').checked)
+                document.querySelector('#id1').innerHTML = 'GT nu'
+        }
+    </script>
+</head>
+
+<body>
+    <form name="frm1">
+        TenDN
+        <input type="text" name="u" id="idu">
+        <br>
+
+        GioiTinh
+        <input type="radio" name="gt" id="gt1" value="nam">Nam
+        <input type="radio" name="gt" id="gt2" value="nu">Nu
+        <br>
+
+        <input type="button" value="Ktra" onclick="F1()">
+    </form>
+
+    <div id="id1">00</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+
+    <style>
+        #content .sp {
+            width: 300px;
+            height: 400px;
+            float: left;
+            text-align: center;
+            margin: 10px;
+            border: 1px solid #ccc;
+        }
+
+        #content .sp img {
+            width: 80%;
+        }
+    </style>
+
+    <script>
+        var x = new XMLHttpRequest();
+
+        function F1() {
+            x.open(
+                "GET",
+                "https://6a1a9062bc2f944754925e72.mockapi.io/sanpham",
+                true
+            );
+
+            x.onreadystatechange = function () {
+                if (x.status == 200 && x.readyState == 4) {
+
+                    let data = x.responseText;
+                    console.log(data);
+
+                    let data2 = JSON.parse(data);
+                    console.log(data2);
+
+                    let s = "";
+
+                    for (let i = 0; i < data2.length; i++) {
+                        s += `
+                            <div class="sp">
+                                <h1>${data2[i].tensp}</h1>
+                                <img src="${data2[i].hinh}">
+                            </div>
+                        `;
+                    }
+
+                    document.querySelector("#content").innerHTML = s;
+                }
+            };
+
+            x.send();
+        }
+    </script>
+</head>
+
+<body onload="F1()">
+
+    <!--
+    <input type="button" value="loadData" onclick="F1()">
+    -->
+
+    <div id="content"></div>
+
+</body>
+</html>
